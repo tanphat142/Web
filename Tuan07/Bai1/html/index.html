@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .animal-image {
+            height: 150px;
+            width: 180px;
+            transition: transform 0.3s ease;
+        }
+        .animal-image:hover {
+            transform: scale(1.1);
+        }
+        .animal-container {
+            border: 1px solid;
+        }
+        .animal-name {
+            font-size: 20px;
+            margin: 0;
+            padding-top: 5px;
+        }
+        .animal-item {
+            border: 1px solid;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="col-6 mx-auto mt-3 border border-1 p-2">
+        <div class="row m-0">
+            <p class="p-0 m-0 animal-name">Animal Gallery</p>
+        </div>
+        <div class="row m-0 gap-2">
+            <div class="col p-0 border border-1 animal-item">
+                <img src="../image/lion.jpg" class="animal-image">
+                <p>Lion</p>
+            </div>
+            <div class="col p-0 border border-1 animal-item">
+                <img src="../image/cat.jpg" class="animal-image">
+                <p>Cat</p>
+            </div>
+            <div class="col p-0 border border-1 animal-item">
+                <img src="../image/bird.jpg" class="animal-image">
+                <p>Bird</p>
+            </div>
+        </div>
+        <div class="row m-0 gap-2">
+            <div class="col p-0 border border-1 animal-item">
+                <img src="../image/Rhino.jpg" class="animal-image" alt="">
+                <p>Rhino</p>
+            </div>
+            <div class="col p-0 border border-1 animal-item">
+                <img src="../image/panda.jpg" class="animal-image" alt="">
+                <p>Panda</p>
+            </div>
+            <div class="col p-0 border border-1 animal-item">
+                <img src="../image/sheep.jpg" class="animal-image" alt="">
+                <p>Goat</p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

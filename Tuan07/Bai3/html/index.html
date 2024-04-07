@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <title>Đăng ký</title>
+    <style>
+        * {
+            color: rgba(0, 0, 175, 0.678);
+        }
+
+        input[type=text],[type=date] {
+            height: 20px;
+            width: 70%;
+            margin: 3px 0;
+            margin-left: 5px;
+        }
+
+        button, select {
+            color: black;
+            height: 25px;
+            padding: 0px 5px;
+            border-radius: 5px;
+            border: 1px solid;
+            margin-left: 5px;
+        }
+
+        table, td {
+            border: 2px solid rgb(0, 180, 0);
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            function checkForm(){
+                let fullName = $("#full-name").val();
+                let userName = $("#user-name").val();
+                let pwd = $("#pwd").val();
+                let rePwd = $("#re-pwd").val();
+                let phone = $("#phone").val();
+                let email = $("#email").val();
+
+                if(!(/^[A-Za-z ]*/.test(fullName) && fullName != '')){
+                    $("#full-name").focus();
+                    return false;
+                }
+                if(!(/^\w{6,}/.test(userName) && userName != '')){
+                    $("#user-name").focus();
+                    return false;
+                }
+                if(!(pwd != '')){
+                    $("#pwd").focus();
+                    return false;
+                }
+                if(!(rePwd == pwd)){
+                    $("#re-pwd").focus();
+                    return false;
+                }
+                if(!(/\d{9,11}/.test(phone) && phone != '')){
+                    $("#phone").focus();
+                    return false;
+                }
+                if(!(/^[a-z]\w+.*\w*@(gmail|yahoo).com/.test(email) && email != '')){
+                    $("#email").focus();
+                    return false;
+                }
+                return true;
+            }
+
+            $("#dkBtn").click(function(){
+                if(checkForm()){
+                    let fullName = $("#full-name").val();
+                    let userName = $("#user-name").val();
+                    let pwd = $("#pwd").val();
+                    let birthDate = $("#birth-date").val();
+                    let phone = $("#phone").val();
+                    let address = $("#address").val();
+                    let email = $("#email").val();
+                    let hobbies = $("#hobbies").val();
+
+                    window.location.href = `thongtin.html?fullName=${encodeURIComponent(fullName)}&userName=${encodeURIComponent(userName)}&pwd=${encodeURIComponent(pwd)}&birthDate=${encodeURIComponent(birthDate)}&phone=${encodeURIComponent(phone)}&address=${encodeURIComponent(address)}&email=${encodeURIComponent(email)}&hobbies=${encodeURIComponent(hobbies)}`;
+                }
+            });
+
+            $("#huyBtn").click(function(){
+                $("input[type=text], input[type=date]").val('');
+                $("select").val('Ca nhạc');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="col-6 p-2 mx-auto" style="background-color: #ecfdea;">
+        <table style="width: 100%;">
+            <p class="text-center m-0">Register Form</p>
+            <tr>
+                <td class="text-end col-4">Họ và tên (*):</td>
+                <td class="text-start"><input type="text" id="full-name"></td>
+            </tr>
+            <tr>
+                <td class="text-end">Tên đăng nhập (*)</td>
+                <td><input type="text" id="user-name"></td>
+            </tr>
+            <tr>
+                <td class="text-end">Mật khẩu (*):</td>
+                <td><input type="text" id="pwd"></td>
+            </tr>
+            <tr>
+                <td class="text-end">Xác nhận mật khẩu (*):</td>
+                <td><input type="text" id="re-pwd"></td>
+            </tr>
+            <tr>
+                <td class="text-end">Ngày sinh:</td>
+                <td><input type="date" id="birth-date"></td>
+            </tr>
+            <tr>
+                <td class="text-end">Điện thoại:</td>
+                <td><input type="text" id="phone"></td>
+            </tr>
+            <tr>
+                <td class="text-end">Địa chỉ:</td>
+                <td><input type="text" id="address"></td>
+            </tr>
+            <tr>
+                <td class="text-end">Email khác:</td>
+                <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td class="text-end">Sở thích:</td>
+                <td><select id="hobbies">
+                    <option value="Ca nhạc">Ca Nhạc</option>
+                    <option value="Vẽ">Vẽ</option>
+                    <option value="Thể thao">Thể thao</option>
+                    <option value="Học tập">Học tập</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> 
+                    <button id="dkBtn">Đăng ký</button>
+                    <button id="huyBtn">Hủy</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
