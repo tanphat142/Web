@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body{
+            width: 290px;
+            height: 300px;
+            border: 1px solid rgb(177, 174, 174);
+            margin-left: 500px;
+            padding-left: 10px;
+            margin-top: 20px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <form action="action_page.php">
+        <p>
+        <label for="Name">Name:</label>
+    <br>
+    <input type="text" id="Name"></p>
+    <p>
+        <label for="phone"> Telephone Number:</label>
+       <br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">    <br>
+    
+    </p>
+    <p>
+        <label for="favorite">Favorite:</label>
+        <br>
+        
+        <input type="color" id="favorite" value="#0000ff">
+    </p>
+    <p><label for="Date">Date of Birth:</label>
+    <br>
+        <input type="date">
+</p>
+<p style="text-align: center; " > <input type="submit" ></p>
+
+    
+     
+    </form>
+    
+</body>
+</html>

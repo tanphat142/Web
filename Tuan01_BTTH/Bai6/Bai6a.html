@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
+    <style>
+        
+        body{
+            
+            
+            
+            width: 1200px;
+            border: 2px solid blanchedalmond;
+            margin-left: 200px;
+
+        }
+        
+        #logo{
+            margin: auto;
+            text-align: center;
+            border: 2px solid black;
+            border-radius:20px ;
+            background-color: rgb(31, 237, 237);
+            width: 35%;
+            height: 100%;
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow:3px 3px 3px 3px rgba(114, 113, 113, 0.795);
+        }
+        table {
+            border: 2px solid #7ca2e8;
+            width: 100%;
+            border-color: #7ca2e8;
+            border-collapse: collapse;
+            
+            
+            
+        }
+        th,td {
+            border: 2px solid black;
+           
+            border-color: #7ca2e8;
+            border-collapse: collapse;
+        }
+       #nen{
+        
+        background-color: #7ca2e8;
+       }
+    </style>
+</head>
+
+<body >
+    <div id="nen">
+    <div id="logo">
+       <h1> Jackson</h1>
+       <hr  style="border: 2.5px solid black;">
+       <h1>Electronics</h1>
+       
+    </div>
+<div>
+    <form action="action_page.php" method="post">
+    <table  >
+        <caption><h1>Registration Form</h1></caption>
+        
+        <tr>
+            <td colspan="2" style="text-align: center;">Register your Jackson Electronics product here</td>
+        </tr>
+        <tr>
+            <td><label for="fname">First Name:</label>
+            <td>            <input type="text" id="fname" name="fname">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+            </td>
+        </td>
+        </tr>
+        <tr>
+            <td><label for="add#1">Addres #1</label>
+           
+            </td>
+            <td> <input type="text" id="add#1" name="Address #1"></td>
+        </tr>
+        <tr>
+            <td><label for="add#2">Addres #2</label>
+                </td>
+            <td><input type="text" id="add#2" name="Address #2"></td>
+        </tr>
+        <tr>
+            <td><label for="city">City:</label></td>
+            <td><input type="text" id="city" name="city">
+            <label for="State">State:</label>
+                <input type="text" id="State" name="state">
+            <label for="zip">Zip:</label>
+            <input type="text" id="zip" name="zip">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <label for="country">Country:</label>
+            </td>
+            <td><input type="text" id="country" name="country" value="United States"></td>
+        </tr>
+        <tr>
+            <td  colspan="2"> <hr style="border: 3px solid rgba(156, 152, 152, 0.753)"></td> 
+        </tr>
+        <tr>
+            <td><label for="Product">Product: </label>
+            </td>
+            <td><select name="product" id="product">
+                <option value="ScanMaster">ScanMaster</option>
+                <option value="VueScan">VueScan</option>
+                <option value="Adobe Scan">Adobe Scan</option>
+                <option value="CamScanner">CamScanner</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label for="Date">Date Purchased:</label></td>
+            <td><input type="text" id="Date"></td>
+        </tr>
+        <tr>
+            <td><label for="Serial">Serial #:</label></td>
+            <td><input type="text" id="Serial" name="Serial"></td>
+        </tr>
+        <tr>
+           <td rowspan="3"> Used for:
+           </td>
+           <td >
+            <input type="radio" id="home" value="Home" >
+            <label for="home">Home</label>
+            <input type="radio" id="Edu" value="Educational Institution" >
+            <label for="Edu">Educational Institution</label>
+        
+        </td>
+       
+        </tr>
+        <tr><td>
+        <input type="radio" id="Busiess" value="Busiess" >
+        <label for="Busiess">Busiess</label>
+        <input type="radio" id="Other" value="Other" >
+        <label for="Other">Other</label>
+    
+       </td></tr>
+       <tr>
+        <td> <input type="radio" id="Govermment" value="Govermment" >
+            <label for="Govermment">Govermment</label></td>
+       </tr>
+       <tr>
+        <td rowspan="2">System (check all that apply):</td>
+        <td>
+            <input type="checkbox" id=" Windows" value="Windows">
+            <label for="Windows">Windows</label>
+            <input type="checkbox" id="UNIX" value="UNIX">
+            <label for="UNIX">UNIX</label>
+        </td>
+        <tr>
+        <td>
+            <input type="checkbox" id=" Macintosh" value="Macintosh">
+            <label for="Macintosh">Macintosh</label>
+            <input type="checkbox" id="Other" value="Other">
+            <label for="Other">Other</label>
+        </td>
+    </tr>
+      
+        <td  colspan="2"> <hr style="border: 3px solid rgba(156, 152, 152, 0.753)"></td> 
+    </tr>
+    <tr>
+        <td>Comments?:</td>
+        <td>
+            <textarea name="message" id="message" cols="30" rows="10" style="width: 726px;height: 100%;"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" value="Click to register">
+        <input type="reset" value="Click to cancel">
+        </td>
+    </tr>
+    </table>
+</form>
+    </div>
+</div>
+</body>
+</html>

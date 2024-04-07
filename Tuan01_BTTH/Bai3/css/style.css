@@ -1,0 +1,14 @@
+#homeFrame{
+    border: 1px solid;
+    width: 1200px;
+    height: 420px;
+    margin: 0 auto;
+    padding: 5px;
+}
+#slide1Frame{
+    height: 720px;
+    width: 1000px;
+    border: 1px solid;
+    margin: 0 auto;
+    padding: 3px;
+}
