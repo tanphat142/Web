@@ -1,0 +1,153 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.frame{
+    max-width: 1000px;
+    max-height: 1100px;
+  
+}
+/*header*/
+header{
+    width: 100%;
+}
+/*img head*/
+header img{
+    width: 100%;
+}
+/*nav*/
+nav{
+    display: flex;
+    background-color: RGB(236,222,237);
+}
+nav .lv1{
+    margin-left: 0;
+    list-style-type: none;
+    display: flex;
+    position: relative;
+}
+nav .lv1 li{
+    margin: 10px 15px;
+}
+nav .searchArea{
+    margin: 10px 15px;
+}
+nav .searchArea input[type="button"]{
+    background-color: rgb(63, 124, 255); border:none; padding: 2px; color: white; font-weight: bold; border-radius: 3px 3px 3px 3px;
+}
+nav a{
+    font-weight: bold;
+    text-decoration: none;
+}
+nav .lv2{
+    position: absolute;
+    display: none;
+}
+nav .lv2{
+    list-style: none;
+}
+nav .lv2 li{
+    padding: 5px;
+    background-color: #b8e3e9;
+}
+nav .lv1 li:hover .lv2{
+    display: block;
+}
+/*center*/
+.center{
+    height: 413px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+/*center asied*/
+.center aside{
+    border: 4px solid rgb(218, 218, 218);
+    height: 100%;
+    float: right;
+    width: 33%;
+}
+.center aside img{
+    width: 97%;
+    margin: 5px 5px;
+    box-shadow: 3px 3px 3px gray;
+}
+.center aside h3{
+    border-bottom: 2px dotted black;
+    font-size: 19px;
+    text-align: center;
+    text-shadow: 2px 2px 1px yellow;
+    color: rgb(197, 0, 0);
+}
+/*center content*/
+.center .content{
+    float: left;
+    width: 66%;
+    height: 103%;
+    background-color:  #b8e3e9;
+}
+.content p{
+    text-indent: 20px;
+    margin: 10px 10px;
+    font-family: Arial;
+    float: left;
+    width: 48%;
+    text-align: justify;
+}
+.content #contentTitle{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: rgb(216, 0, 0);
+}
+/*content form*/
+.content form{
+    font-size: 21px;
+    float: right;
+    width: 35%;
+    margin-right: 55px;
+}
+.content form fieldset{
+    padding: 5px 5px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px rgb(114, 114, 114);
+}
+.content form input{
+    height: 25px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.content form input[type="submit"]{
+    box-shadow: 3px 3px 3px gray;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    margin: 20px 5px;
+    width: 60px;
+}.content form input[type="reset"]{
+    box-shadow: 3px 3px 3px gray;
+    font-size: 15px;
+    border: none;
+    font-weight: bold;
+    width: 60px;
+    margin: 20px 5px;
+}
+/*footer*/
+footer{
+    height: 50px;
+    width: 100%;
+    float: left;
+    
+    background-color:  #cbcc66;
+}
+footer p{
+    margin: 13px 20px;
+}
+footer #ten{
+    float: left;
+}
+footer #lop{
+    float: right;
+}
