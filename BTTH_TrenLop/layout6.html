@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout6</title>
+    <style>
+        .wrapper {
+            height: 600px;
+            width: 1000px;
+            margin: 0px auto;
+            padding: 0px;
+            border: 1px solid red;
+        }
+        
+        .header {
+            background: green;
+            color: antiquewhite;
+            height: 50px;
+            width: 1000px;
+            border-bottom: 1px solid red;
+        }
+        
+        .nav {
+            background: gray;
+            color: antiquewhite;
+            height: 25px;
+            width: 1000px;
+            border-bottom: 1px solid red;
+        }
+        
+        .main-content {
+            display: flex;
+            background: rgb(93, 93, 219);
+            color: antiquewhite;
+            height: 500px;
+            width: 1000px;
+            border-bottom: 1px solid red;
+        }
+        
+        .section {
+            flex-basis: 70%;
+            background: rgb(79, 79, 153);
+            color: antiquewhite;
+            border-right: 1px solid red;
+        }
+        
+        .aside {
+            flex-basis: 30%;
+            background: rgb(170, 170, 134);
+            color: antiquewhite;
+        }
+        
+        .article {
+            height: 45%;
+            width: 90%;
+            background: orange;
+            margin: 0px auto;
+            border: 1px solid red;
+        }
+        
+        #a {
+            margin-top: 10px;
+        }
+        
+        #b {
+            border-top: 0px;
+        }
+        
+        .footer {
+            background: rgb(53, 37, 37);
+            color: antiquewhite;
+            height: 50px;
+            width: 1000px;
+            border-bottom: 1px solid red;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            header
+        </div>
+        <div class="nav">
+            nav
+        </div>
+        <div class="main-content">
+            <div class="section">
+                section
+                <div class="article" id="a">
+                    article
+                </div>
+                <div class="article" id="b">
+                    article
+                </div>
+            </div>
+            <div class="aside">
+                aside
+            </div>
+        </div>
+        <div class="footer">
+            footer
+        </div>
+    </div>
+</body>
+
+</html>

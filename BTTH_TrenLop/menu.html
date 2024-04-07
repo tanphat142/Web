@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .wrapper {
+            max-width: 1089px;
+            margin: 0 auto;
+            background-color: #f5f5f5; /* Light gray background */
+            border: 1px solid #ccc; /* Light gray border */
+        }
+
+        .header, .nav, .footer {
+            border-bottom: 1px solid #ccc; /* Light gray border for header, nav, footer */
+        }
+
+        .header {
+            height: 150px;
+            background-color: #4285f4; /* Google blue color */
+            position: relative;
+        }
+
+        .header img {
+            height: 100%;
+            width: auto;
+        }
+
+        .header .p1 {
+            position: absolute;
+            right: 20px;
+            color: #fff;
+            top: 30px;
+            font-size: 35px;
+        }
+
+        .header:hover > .p1 {
+            font-style: italic;
+            font-weight: bolder;
+        }
+
+        .nav {
+            height: 50px;
+            background-color: #4caf50; /* Green color for nav background */
+        }
+
+        .menu {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .menu li {
+            flex: 1;
+            position: relative;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 5px;
+            background-color: #66bb6a; /* Light green color for menu items */
+            margin: 0 5px;
+        }
+
+        .sub-menu, .sub-menu li {
+            list-style-type: none;
+        }
+
+        .menu a {
+            text-decoration: none;
+            font-weight: bolder;
+            display: block;
+            color: #fff;
+        }
+
+        .menu li:hover {
+            background-color: #43a047; /* Darker green color on hover */
+        }
+
+        .menu li:hover > a {
+            font-style: italic;
+        }
+
+        .sub-menu {
+            display: none;
+            position: absolute;
+            top: 54px;
+            left: 0;
+            width: 100%;
+            white-space: nowrap;
+        }
+
+        .menu li:hover > .sub-menu {
+            display: block;
+        }
+
+        .sub-menu li:hover > .sub-menu {
+            display: block;
+            top: 0;
+            left: 100%;
+        }
+
+        .content {
+            display: flex;
+            min-height: calc(100vh - 200px);
+        }
+
+        .aside, .section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .footer {
+            height: 50px;
+            border-top: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: #4caf50; /* Green color for footer background */
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="https://rubee.com.vn/wp-content/uploads/2021/05/logo-iuh-1-768x335.png" alt="IUH Logo">
+            <p class="p1">Khoa CNTT</p>
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="#">TRANG CHỦ</a></li>
+                <li><a href="#">LỊCH HỌC</a></li>
+                <li><a href="#">TRA CỨU</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">THÔNG TIN CÁ NHÂN</a></li>
+                        <li><a href="#">ĐỔI MẬT KHẨU</a></li>
+                        <li><a href="#">ĐIỂM</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">ĐIỂM TRUNG BÌNH</a></li>
+                                <li><a href="#">HỌC BỔNG</a></li>
+                                <li><a href="#">HỌC PHẦN</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>    
+                <li><a href="#">ĐĂNG XUẤT</a></li>
+                <li><a href="#">HỖ TRỢ</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="aside"></div>
+            <div class="section"></div>
+        </div>   
+        <div class="footer">
+            <p>Copyright &copy; by Tan Phat</p>
+        </div>
+    </div>
+</body>
+</html>
