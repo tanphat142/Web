@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+</head>
+<style>
+    form>* {
+        margin: 8px;
+    }
+
+    .col-6 {
+        margin: auto;
+        background-color: aliceblue;
+        padding: 16px;
+        margin-top: 32px;
+    }
+
+    th {
+        font-weight: 800;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="form">
+                    <form action="">
+                        <label for="txtHoTen" class="w-25">Họ tên:</label>
+                        <input type="text" id="txtHoTen" name="txtHoTen" onblur="isValidInput()"><span id="errHoTen" style="font-style: italic; color: red;">(*)</span><br>
+                        <label for="listLop" class="w-25">Lớp:</label>
+                        <select id="listLop">
+                            <option value="Đại học Kỹ thuật phần mềm 9A">Đại học Kỹ thuật phần mềm 9A</option>
+                            <option value="Đại học Kỹ thuật phần mềm 9B">Đại học Kỹ thuật phần mềm 9B</option>
+                            <option value="Đại học Kỹ thuật phần mềm 9C">Đại học Kỹ thuật phần mềm 9C</option>
+                        </select><br>
+                        <label for="listMon" class="w-25">Môn học:</label>
+                        <select id="listMon">
+                            <option value="Lập trình hướng đối tượng">Lập trình hướng đối tượng</option>
+                            <option value="Lập trình hướng sự kiện">Lập trình hướng sự kiện</option>
+                            <option value="Lập trình phân tích dữ liệu">Lập trình phân tích dữ liệu</option>
+                        </select><br>
+                        <label class="w-25">Loại:</label>
+                        <input type="radio" name="loai" id="loaiLyThuyet" value="Lý thuyết" onchange="isValidInput()"> <label for="loaiLyThuyet">Lý thuyết</label>
+                        <input type="radio" name="loai" id="loaiThucHanh" value="Thực hành" onchange="isValidInput()"> <label for="loaiThucHanh">Thực hành</label><span class="err" id="errLoai" style="font-style: italic; color: red;">(*)</span><br>
+                        <button type="button" class="btn btn-primary" id="registerButton" disabled onclick="addItem()">Đăng ký</button>
+                    </form>
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Họ tên</th>
+                            <th>Lớp</th>
+                            <th>Môn học đăng ký</th>
+                            <th>Loại</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        function isValidInput() {
+            let regexHoTen = /^[A-Z][a-z]*(\s[A-Z][a-z]*)*$/;
+            let hoTen = document.getElementById('txtHoTen').value;
+            let loai = document.getElementsByName('loai');
+
+            if (hoTen == "") {
+                document.getElementById('errHoTen').innerHTML = "Họ tên trống";
+                return false;
+            } else if (regexHoTen.test(hoTen) == false) {
+                document.getElementById('errHoTen').innerHTML = "Họ tên sai";
+                return false;
+            } else {
+                document.getElementById('errHoTen').innerHTML = "";
+            }
+
+            let isChecked = false;
+            for (let i = 0; i < loai.length; i++) {
+                if (loai[i].checked) {
+                    isChecked = true;
+                }
+            }
+            if (isChecked == false) {
+                document.getElementById('errLoai').innerHTML = "Chưa chọn";
+                return false;
+            } else {
+                document.getElementById('errLoai').innerHTML = "";
+            }
+
+            document.getElementById('registerButton').disabled = false;
+            return true;
+        }
+        
+        function addItem(){
+            let hoTen = document.getElementById('txtHoTen').value
+            let lopHoc = document.getElementById('listLop').value
+            let monHoc = document.getElementById('listMon').value
+            let loai = document.getElementsByName('loai');
+            let loaiSelected = null;
+            
+            for(let i = 0; i < loai.length; i++){
+                if(loai[i].checked){
+                    loaiSelected = loai[i].value
+                    break;
+                }
+            }
+
+            let newUser = `
+            <tr>
+                <td>${hoTen}</td>
+                <td>${lopHoc}</td>
+                <td>${monHoc}</td>
+                <td>${loaiSelected}</td>
+            </tr>`
+
+            $("table tbody").append(newUser)
+        }
+    </script>
+</body>
+</html>

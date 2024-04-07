@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    .form-control{
+        border: none;
+    }
+    label{
+        width: 25%;
+    }
+    input{
+        width: 50%;
+    }
+    .err{
+        color: red;
+        font-style: italic;
+    }
+    .m-auto{
+        margin: auto;
+        padding-top: 36px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6" style="margin: auto;">
+                <form action="" id="myForm">
+                    <p class="h1 font-weight-bold text-center">ĐĂNG KÝ TÀI KHOẢN</p>
+                    <div class="form-control">
+                        <label for="txtDN">Tên đăng nhập:</label>
+                        <input type="text" onblur="isValidInput()" placeholder="Tên đăng nhập" name="txtDN" id="txtDN">
+                        <span class="err" id="errTenDN">(*)</span>
+                    </div>
+                    <div class="form-control">
+                        <label for="txtMK">Mật khẩu:</label>
+                        <input type="password" onblur="isValidInput()" placeholder="Mật khẩu" name="txtMK" id="txtMK">
+                        <span class="err" id="errMK">(*)</span>
+                    </div>
+                    <div class="form-control">
+                        <label for="txtMK2">Nhập lại mật khẩu:</label>
+                        <input type="password" onblur="isValidInput()" placeholder="Nhập lại mật khẩu" name="txtMK2" id="txtMK2">
+                        <span class="err" id="errMK2">(*)</span>
+                    </div>
+                </form>
+                <form action="" id="myInfo">
+                    <p class="text-center h3 font-weight-bold">THÔNG TIN CÁ NHÂN</p>
+                    <div class="form-control">
+                        <label for="txtHoTen">Họ và tên:</label>
+                        <input type="text" onblur="isValidInput()" placeholder="Họ và tên" name="txtHoTen" id="txtHoTen">
+                        <span class="err" id="errHoTen">(*)</span>
+                    </div>
+                    <div class="form-control">
+                        <label for="ngaySinh">Ngày sinh:</label>
+                        <input type="date" onblur="isValidInput()" name="ngaySinh" id="ngaySinh">
+                        <span class="err" id="errNgaySinh">(*)</span>
+                    </div>
+                    <div class="form-control">
+                        <label for="">Giới tính</label>
+                        <input type="radio" name="gender" id="male" style="width: auto;">
+                        <label for="" style="width: auto;">Nam</label>
+                        <input type="radio" name="gender" id="female" style="width: auto;">
+                        <label for="" style="width: auto;">Nữ</label>
+                        <span class="err" id="errGioiTinh">(*)</span>
+                    </div>                 
+                    <div class="form-control">
+                        <label for="txtDiaChi">Địa chỉ:</label>
+                        <input type="text" onblur="isValidInput()" placeholder="Địa chỉ" id="txtDiaChi" name="txtDiaChi">
+                        <span class="err" id="errDiaChi">(*)</span>
+                    </div>
+                    <div class="form-control">
+                        <label for="txtSdt">Điện thoại:</label>
+                        <input type="text" onblur="isValidInput()" placeholder="Điện thoại" id="txtSdt" name="txtSdt">
+                        <span class="err" id="errSdt">(*)</span>
+                    </div>
+                    <div class="form-control">
+                        <label for="txtEmail">Email:</label>
+                        <input type="text" onblur="isValidInput()" placeholder="Email" id="txtEmail" name="txtEmail">
+                        <span class="err" id="errEmail">(*)</span>
+                    </div>
+                </form>
+                <div class="m-auto d-flex justify-content-center">
+                    <div>
+                        <button class="btn btn-primary text-light" onclick="submit()">Đăng ký</button>
+                        <button class="btn btn-primary text-light" onclick="clearForm()">Hủy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/check.js"></script>
+</body>
+</html>

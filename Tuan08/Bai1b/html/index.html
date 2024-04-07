@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1b</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/check.js" defer></script>
+</head>
+<style>
+    .rounded {
+        border-radius: 8px;
+    }
+    .err {
+        color: red;
+        font-style: italic;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header d-flex justify-content-between text-light" style="background-color: #3b5798;">
+            <img src="../image/logo.img" alt="">
+            <div class="form d-flex" style="margin-right: 16px;">
+                <form action="" class="d-flex justify-content-evenly" id="loginForm">
+                    <div class="form-group" style="margin-right: 16px;">
+                        <label for="emailPhone">Email hoặc điện thoại</label><br>
+                        <input class="rounded" type="text" style="height: 30px;" id="emailPhone"><br>
+                        <input type="checkbox" id="autoLogin">
+                        <label for="autoLogin">Tự động đăng nhập</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mật khẩu</label><br>
+                        <input class="rounded" type="password" style="height: 30px;" id="password">
+                        <button type="submit" class="btn btn-primary" style="height: 30px; margin-top: 0; padding: 2px;">Đăng nhập</button><br>
+                        <p><a href="#" style="text-decoration: none; color: lightskyblue;">Quên mật khẩu</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="body d-flex justify-content-between" style="background-color: #e5e6fb;">
+            <img src="../image/abc.img" alt="">
+            <div class="form-register" style="margin-right: 20%;">
+                <p style="margin: 8px;" class="h2 font-weight-bold">Đăng ký</p>
+                <p style="margin: 8px;" class="h5 font-weight-bold">Miễn phí và sẽ luôn như vậy.</p>
+                <input type="text" style="margin: 8px;" class="rounded w-40" name="txtHo" placeholder="Họ" id="txtHo" onblur="isValidInput('txtHo', 'errHo')"><span class="err" id="errHo"></span>
+                <input type="text" style="margin: 8px;" class="rounded w-40" name="txtTen" placeholder="Tên" id="txtTen" onblur="isValidInput('txtTen', 'errTen')"><span class="err" id="errTen"></span><br>
+                <input type="text" style="margin: 8px;" class="rounded w-100" name="txtEmail" placeholder="Email đăng nhập" id="txtEmail" onblur="isValidInput('txtEmail', 'errEmail')"><span class="err" id="errEmail"></span><br>
+                <input type="text" style="margin: 8px;" class="rounded w-100" name="txtEmail2" placeholder="Nhập lại Email" id="txtEmail2" onblur="isValidInput('txtEmail2', 'errEmail2')"><span class="err" id="errEmail2"></span><br>
+                <input type="password" style="margin: 8px;" class="rounded w-100" name="txtMatKhau" placeholder="Mật khẩu" id="txtMatKhau" onblur="isValidInput('txtMatKhau', 'errMatKhau')"><span class="err" id="errMatKhau"></span><br>
+                <input type="text" style="margin: 8px;" class="rounded w-100" name="txtNamSinh" placeholder="Năm sinh" id="txtNamSinh" onblur="isValidInput('txtNamSinh', 'errNamSinh')"><span class="err" id="errNamSinh"></span><br>
+                <button style="margin: 8px;" class="btn btn-success w-50 rounded" onclick="isRegisterSuccessfully()">Đăng ký</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
