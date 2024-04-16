@@ -1,0 +1,38 @@
+.body-tintuc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px; /* Điều chỉnh giá trị margin-top nếu cần thiết */
+    padding: 20px; /* Thêm padding để tạo khoảng cách xung quanh nội dung */
+}
+  
+.tintuc-info{
+	height: 170px;
+	border-bottom: 1px solid #FCF;
+	margin-top: 5px;
+
+}
+.tintuc-info img{
+	border: 1px solid gray;
+	float: left;
+	margin-right: 10px;
+	padding:5px;
+	border-radius: 5px;
+	height:148px;
+	width:224px;
+}
+.tintuc-info a:hover{
+	color: #666;
+}
+.tintuc-info h5{
+	font-weight: 100;
+	font-style: italic;
+	color: gray;
+}
+
+.tintuc-info h2{
+	font-weight: bold;
+	color: black;
+    font-size: 20px;
+}

@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Danh Sách Sản Phẩm</title>
+
+  <!-- Bootstrap -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icon -->
+  <link rel="stylesheet" href="../fontawesome-free-5.13.0-web/css/all.css">
+
+
+  <!-- File css -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/DanhSach.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    .discount {
+        display: inline-block; /* Hiển thị phần tử như một khối, nhưng vẫn giữ nguyên vị trí của nó trên dòng */
+        border: none; /* Định dạng đường viền của khung */
+        border-radius: 5px; /* Định dạng góc cong của khung */
+        color: white; /* Màu sắc chữ */
+        background: orange;
+        margin-left: 10px;
+    }
+
+    .gift {
+      font-weight: bold;
+      color: red;
+    }
+  </style>
+
+</head>
+
+<body class="bg-light">
+
+
+
+  <header class="fixed-top" style="background: #f1f1f1;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3" style="margin-top: -10px;">
+          <div class="container logo">
+            <p style="display:inline; font-size: 150%;"><a href="TrangChu.html" style="color: black;">Tấn Phát Store</a></p>
+          </div>
+          <p style="display:inline" class="hethongbanle">Hệ thống bán lẻ uy tín</p>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+          <form>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Tên phụ kiện, hãng sản xuất...">
+              <button class="btn btn-warning"><i class="fas fa-search"></i></button>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="margin-top: -4px;">
+          <p class="hotline">19008948</p>
+          <p class="hotro">Hotline hỗ trợ bán hàng</p>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dinhdanga">
+          <div class="row">
+            <div style="padding: 0px 2px 0px 0px; text-align: center;" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <a href="GioHang.html"><button style="width: 100%;" class="btn btn-outline-warning"><i class="fas fa-shopping-cart"></i> Giỏ hàng </button></a>
+            </div>
+            <div id="odangnhap" class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding: 0px 0px 0px 2px;">
+              <button id="nutdangnhap" class="btn btn-outline-warning"><i class="fas fa-users"></i> Đăng nhập </button>
+              <div id="bangdangnhap">
+                <a href="dangnhap.html"><button class="btn btn-warning"><i class="fas fa-users"></i> Đăng nhập</button></a>
+                <a href="dangky.html"><button class="btn btn-warning"><i class="fas fa-registered"></i> Tạo tài khoản</button></a>
+                <a href="dangnhap.html"><button class="btn btn-primary"><img src="../image/logo/fb.png"> Đăng nhập Facebook</button></a>
+                <a href="dangnhap.html"><button class="btn btn-danger"><img src="../image/logo/google.jpg"> Đăng nhập Google </button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ff6a00; height: 50px;">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav" style="font-size: 16px;">
+                <li class="nav-item active">
+                    <a class="nav-link" href="TrangChu.html" style="color: #f1f1f1; font-weight: bold;"><i class="fa fa-home"></i>Trang chủ</a>
+                </li>
+                <li class="nav-item" id="cap1">
+                    <a class="nav-link" href="DanhSach.html"><i class="fa fa-th-large"></i>Sản phẩm</a>
+                    <ul class="submenu" id="cap2">
+                        <li><a href="DanhSach.html">Dàn Karaoke</a></li>
+                        <li><a href="DanhSach1.html">Loa Karaoke</a></li>
+                        <li><a href="DanhSach2.html">Micro Karaoke</a></li>
+                        <li><a href="DanhSach3.html">Công suất Karaoke</a></li>
+                        <li><a href="DanhSach4.html">Amply Karaoke</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tintuc.html"><i class="fa fa-newspaper-o"></i>Tin tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gioithieu.html"><i class="fa fa-info-circle"></i>Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lienhe.html"><i class="fa fa-phone"></i>Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="my-4 col-lg-3" style="height: 800px;">
+
+        <div id="boloc" class=" bg-white">
+
+          <form>
+            <button id="nutloc" class="btn btn-danger"><i class="fas fa-filter"></i> Lọc</button>
+          </form>
+          <h3>Bộ Lọc</h3>
+          <hr>
+
+          <!-- Bộ lọc-->
+          <div>
+
+            <div id="accordion">
+
+
+              <div class="card">
+
+                <div class="card-header">
+
+                  <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    <span>Hãng SX</span> <i class="fas fa-plus congtru"></i>
+                  </a>
+
+                </div>
+
+
+
+                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                  <div class="card-body">
+                    <form>
+                      <input type="text" class="form-control" placeholder="Tìm thương hiệu">
+                      <br>
+                      <input type="checkbox"> <label for="">Boston</label>
+                      <br>
+                      <input type="checkbox"> <label for="">JBL</label>
+                      <br>
+                      <input type="checkbox"> <label for="">PARAMAX</label>
+                      <br>
+                      <input type="checkbox"> <label for="">NEKO</label>
+                      <br>
+                      <input type="checkbox"> <label for="">Yamaha</label>
+                      <br>
+                      <input type="checkbox"> <label for="">BMB</label>
+                      <br>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="card">
+                <div class="card-header">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                    <span>Mức giá</span> <i class="fas fa-plus congtru"></i>
+                  </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    <form>
+                      <input type="checkbox" id="tatca"> <label for="tatca"> Tất cả</label>
+                      <br>
+                      <input type="checkbox" id="gia1"> <label for="gia1"> Dưới 3 triệu</label>
+                      <br>
+                      <input type="checkbox" id="gia2"> <label for="gia2">Từ 3 - 5 triệu</label>
+                      <br>
+                      <input type="checkbox" id="gia3"> <label for="gia3">Từ 5 - 8 triêu</label>
+                      <br>
+                      <input type="checkbox" id="gia5"> <label for="gia5">Trên 8 triệu</label>
+                      <br>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <div class="card-header">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                    <span>Loại Micro</span> <i class="fas fa-plus congtru"></i>
+                  </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    <form>
+                      <input type="checkbox"> <label for="manhinh3">Không dây</label>
+                      <br>
+                      <input type="checkbox"> <label for="manhinh3">Có dây</label>
+                      <br>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                    <span>Tính năng</span> <i class="fas fa-plus congtru"></i>
+                  </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    <form>
+                      <input type="checkbox" id="ram1"> <label for="ram1"> Hạn chế hú rít</label>
+                      <br>
+                      <input type="checkbox" id="ram2"> <label for="ram2"> Tự đồng dò sóng sạch</label>
+                      <br>
+                      <input type="checkbox" id="ram3"> <label for="ram3"> Cảm biến tự ngắt</label>
+                      <br>
+                      <input type="checkbox" id="ram4"> <label for="ram4"> Cảm biến gia tốc</label>
+                      <br>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+          <!-- Bộ lọc-->
+
+
+        </div>
+
+
+
+
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9 bg-white my-4">
+
+        <div class="tieudesanpham">
+
+          <!-- sửa -->
+          <div class="tren">
+            <button class="btn btn-outline-success">Sắp xếp theo giá
+              <ul class="sortPrice">
+                <li><a href="#">Thấp đến cao</a></li>
+                <li><a href="#">Cao đến thấp</a></li>
+              </ul>
+
+            </button>
+            <p>MICRO KARAOKE (29+ sản phẩm)</p>
+
+          </div>
+
+
+          <!-- SỬA -->
+          <div class="duoi">
+            <button class="btn btn-secondary btn1">Micro karaoke <i class="fas fa-times"></i></button>
+            <button class="btn btn-success btn1">Xóa tất cả <i class="fas fa-times"></i></button>
+          </div>
+
+        </div>
+
+        <div class="row my-4" style="background-color: white;">
+
+          <!-- san pham 1-->
+          <div class="col-lg-4 col-md-6 mb-4">
+
+            <div class="card h-100 chiTietSanPham">
+
+                <a href="Chitietsanpham2.html"><img class="card-img-top" src="../image/sanpham/anh5.jpg" alt=""></a>
+
+                <div class="card-body">
+                  <h6 class="card-title">
+                    <a href="Chitietsanpham2.html"> Micro không dây JKAudio B5 Plus, Cảm biến tự ngắt, Dò sóng sạch </a>
+                  </h6>
+                  <div class="cardGia">
+                    5.890.000 đ
+                  </div>
+                  <div class="row">
+                    <div class="container">
+                      <div class="thongtin">
+                        <p><s>7.000.000đ</s> <span class="discount">-16%</span></p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="row">
+                    <div class="container">
+                      <div class="thongtin">
+                        <p>Quà trị giá: <span class="gift">449.000đ</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- viet doan nay-->
+              <div class="carh h-100 moTaSanPham">
+                <div class="container">
+
+                  <h5>Micro không dây JKAudio B5 Plus, Cảm biến tự ngắt, Dò sóng sạch</h5>
+
+                  <h6 style="color: red;">5.890.000 đ</h6>
+
+                  <b>Bảo hành</b>
+                  <p><i class="fas fa-check-square"></i> Bảo hành 12 thánh một đổi một trong vòng 15 ngày <a
+                      href="#">Xem Chính Sách</a></p>
+                  <p><i class="fas fa-check-square"></i> Gía ở trên đã bao gồm VAT 10%</p>
+                  <p><i class="fas fa-check-square"></i> MIỄN PHÍ GIAO HÀNG toàn địa bàn thành phố</p>
+                  <p><b>Kho Hàng: </b>còn hàng</p>
+                  <hr>
+                  <p><b>Mô tả tóm tắt: </b>Âm thanh trong trẻo, thiết bị hiện đại, phong cách mới mẻ.</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end san pham 1-->
+
+           <!-- san pham 2-->
+           <div class="col-lg-4 col-md-6 mb-4">
+
+            <div class="card h-100 chiTietSanPham">
+
+                <a href="Chitietsanpham2.html"><img class="card-img-top" src="../image/sanpham/anh7.jpg" alt=""></a>
+
+                <div class="card-body">
+                  <h6 class="card-title">
+                    <a href="Chitietsanpham2.html"> Micro Không Dây Alpha Works A1, Kết nối qua cổng AUX 3,5mm</a>
+                  </h6>
+                  <div class="cardGia">
+                    990.000 đ
+                  </div>
+                  <div class="row">
+                      <div class="container">
+                        <div class="thongtin">
+                          <p><s>1.990.000đ</s> <span class="discount">-50%</span></p>
+                        </div>
+                      </div>
+                    </div>
+    
+                  <div class="row">
+                    <div class="container">
+                      <div class="thongtin">
+                        <p>Quà trị giá: <span class="gift">100.000đ</span></p>
+                      </div>
+                    </div>
+                  </div>
+    
+                </div>
+
+
+
+
+              <!-- viet doan nay-->
+              <div class="carh h-100 moTaSanPham">
+                <div class="container">
+
+                  <h5>Micro Không Dây Alpha Works A1, Kết nối qua cổng AUX 3,5mm</h5>
+
+                  <h6 style="color: red;">990.000 đ</h6>
+
+                  <b>Bảo hành</b>
+                  <p><i class="fas fa-check-square"></i> Bảo hành 12 thánh một đổi một trong vòng 15 ngày <a
+                      href="#">Xem Chính Sách</a></p>
+                  <p><i class="fas fa-check-square"></i> Gía ở trên đã bao gồm VAT 10%</p>
+                  <p><i class="fas fa-check-square"></i> MIỄN PHÍ GIAO HÀNG toàn địa bàn thành phố</p>
+                  <p><b>Kho Hàng: </b>còn hàng</p>
+                  <hr>
+                  <p><b>Mô tả tóm tắt: </b>Âm thanh trong trẻo, thiết bị hiện đại, phong cách mới mẻ.</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end san pham 2-->
+
+          <!-- san pham 3-->
+          <div class="col-lg-4 col-md-6 mb-4">
+
+            <div class="card h-100 chiTietSanPham1">
+
+                <a href="Chitietsanpham2.html"><img class="card-img-top" src="../image/sanpham/anh13.jpg" alt=""></a>
+
+                <div class="card-body">
+                  <h6 class="card-title">
+                    <a href="Chitietsanpham2.html"> Micro JBL VM300, Cảm biết gia tốc, Cảm biến tự ngắt, Dò sóng sạch </a>
+                  </h6>
+                  <div class="cardGia">
+                    7.590.000 đ
+                  </div>
+                  <div class="row">
+                    <div class="container">
+                      <div class="thongtin">
+                        <p><s>11.000.000đ</s> <span class="discount">-31%</span></p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="row">
+                    <div class="container">
+                      <div class="thongtin">
+                        <p>Quà trị giá: <span class="gift">449.000đ</span></p>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+
+              <!-- viet doan nay-->
+              <div class="carh h-100 moTaSanPham">
+                <div class="container">
+
+                  <h5>Micro JBL VM300, Cảm biết gia tốc, Cảm biến tự ngắt, Dò sóng sạch</h5>
+
+                  <h6 style="color: red;">7.590.000 đ</h6>
+
+                  <b>Bảo hành</b>
+                  <p><i class="fas fa-check-square"></i> Bảo hành 12 thánh một đổi một trong vòng 15 ngày <a
+                      href="#">Xem Chính Sách</a></p>
+                  <p><i class="fas fa-check-square"></i> Gía ở trên đã bao gồm VAT 10%</p>
+                  <p><i class="fas fa-check-square"></i> MIỄN PHÍ GIAO HÀNG toàn địa bàn thành phố</p>
+                  <p><b>Kho Hàng: </b>còn hàng</p>
+                  <hr>
+                  <p><b>Mô tả tóm tắt: </b>Âm thanh trong trẻo, thiết bị hiện đại, phong cách mới mẻ.</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- end san pham 3-->
+
+          
+           <!-- san pham 4-->
+           <div class="col-lg-4 col-md-6 mb-4">
+
+            <div class="card h-100 chiTietSanPham">
+
+              <a href="Chitietsanpham2.html"><img class="card-img-top" src="../image/sanpham/mk1.jpg" alt=""></a>
+
+              <div class="card-body">
+                <h6 class="card-title">
+                  <a href="Chitietsanpham2.html"> Micro JKaudio K800, Cảm biết gia tốc, Dò sóng sạch</a>
+                </h6>
+                <div class="cardGia">
+                    7.990.000 đ
+                </div>
+                <div class="row">
+                  <div class="container">
+                    <div class="thongtin">
+                      <p><s>9.500.000đ</s> <span class="discount">-8%</span></p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="row">
+                  <div class="container">
+                    <div class="thongtin">
+                      <p>Quà trị giá: <span class="gift">249.000đ</span></p>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+
+
+
+
+              <!-- viet doan nay-->
+              <div class="carh h-100 moTaSanPham">
+                <div class="container">
+
+                  <h5>Micro JKaudio K800, Cảm biết gia tốc, Dò sóng sạch</h5>
+
+                  <h6 style="color: red;">7.990.000 đ</h6>
+
+                  <b>Bảo hành</b>
+                  <p><i class="fas fa-check-square"></i> Bảo hành 12 thánh một đổi một trong vòng 15 ngày <a
+                      href="#">Xem Chính Sách</a></p>
+                  <p><i class="fas fa-check-square"></i> Gía ở trên đã bao gồm VAT 10%</p>
+                  <p><i class="fas fa-check-square"></i> MIỄN PHÍ GIAO HÀNG toàn địa bàn thành phố</p>
+                  <p><b>Kho Hàng: </b>còn hàng</p>
+                  <hr>
+                  <p><b>Mô tả tóm tắt: </b>Âm thanh trong trẻo, thiết bị hiện đại, phong cách mới mẻ.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- end san pham 4-->
+
+           <!-- san pham 5-->
+           <div class="col-lg-4 col-md-6 mb-4">
+
+            <div class="card h-100 chiTietSanPham">
+
+              <a href="Chitietsanpham2.html"><img class="card-img-top" src="../image/sanpham/mk2.jpg" alt=""></a>
+
+              <div class="card-body">
+                <h6 class="card-title">
+                  <a href="Chitietsanpham2.html"> Micro Không Dây JKAudio K300, Cảm biến tự ngắt</a>
+                </h6>
+                <div class="cardGia">
+                    3.990.000 đ
+                </div>
+                <div class="row">
+                  <div class="container">
+                    <div class="thongtin">
+                      <p><s>4.900.000đ</s> <span class="discount">-4%</span></p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="row">
+                  <div class="container">
+                    <div class="thongtin">
+                      <p>Quà trị giá: <span class="gift">249.000đ</span></p>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+
+
+
+
+              <!-- viet doan nay-->
+              <div class="carh h-100 moTaSanPham">
+                <div class="container">
+
+                  <h5>Micro Không Dây JKAudio K300, Cảm biến tự ngắt</h5>
+
+                  <h6 style="color: red;">3.990.000 đ</h6>
+
+                  <b>Bảo hành</b>
+                  <p><i class="fas fa-check-square"></i> Bảo hành 12 thánh một đổi một trong vòng 15 ngày <a
+                      href="#">Xem Chính Sách</a></p>
+                  <p><i class="fas fa-check-square"></i> Gía ở trên đã bao gồm VAT 10%</p>
+                  <p><i class="fas fa-check-square"></i> MIỄN PHÍ GIAO HÀNG toàn địa bàn thành phố</p>
+                  <p><b>Kho Hàng: </b>còn hàng</p>
+                  <hr>
+                  <p><b>Mô tả tóm tắt: </b>Âm thanh trong trẻo, thiết bị hiện đại, phong cách mới mẻ.</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end san pham 5-->
+
+          <!-- san pham 6-->
+          <div class="col-lg-4 col-md-6 mb-4">
+
+            <div class="card h-100 chiTietSanPham1">
+
+              <a href="Chitietsanpham2.html"><img class="card-img-top" src="../image/sanpham/mk3.jpg" alt=""></a>
+
+              <div class="card-body">
+                <h6 class="card-title">
+                  <a href="Chitietsanpham2.html"> Micro không dây JKAudio B3 Plus, Cảm biến tự ngắt</a>
+                </h6>
+                <div class="cardGia">
+                    4.690.000 đ
+                </div>
+                <div class="row">
+                  <div class="container">
+                    <div class="thongtin">
+                      <p><s>5.500.000đ</s> <span class="discount">-6%</span></p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="row">
+                  <div class="container">
+                    <div class="thongtin">
+                      <p>Quà trị giá: <span class="gift">249.000đ</span></p>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+
+
+
+
+              <!-- viet doan nay-->
+              <div class="carh h-100 moTaSanPham">
+                <div class="container">
+
+                  <h5>Micro không dây JKAudio B3 Plus, Cảm biến tự ngắt</h5>
+
+                  <h6 style="color: red;">4.690.000 đ</h6>
+
+                  <b>Bảo hành</b>
+                  <p><i class="fas fa-check-square"></i> Bảo hành 12 thánh một đổi một trong vòng 15 ngày <a
+                      href="#">Xem Chính Sách</a></p>
+                  <p><i class="fas fa-check-square"></i> Gía ở trên đã bao gồm VAT 10%</p>
+                  <p><i class="fas fa-check-square"></i> MIỄN PHÍ GIAO HÀNG toàn địa bàn thành phố</p>
+                  <p><b>Kho Hàng: </b>còn hàng</p>
+                  <hr>
+                  <p><b>Mô tả tóm tắt: </b>Âm thanh trong trẻo, thiết bị hiện đại, phong cách mới mẻ.</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end san pham 6-->
+
+           <!-- san pham 7-->
+           <div class="col-lg-4 col-md-6 mb-4">
+
+            <div class="card h-100 chiTietSanPham">
+
+              <a href="Chitietsanpham2.html"><img class="card-img-top" src="../image/sanpham/mk4.jpg" alt=""></a>
+
+              <div class="card-body">
+                <h6 class="card-title">
+                  <a href="Chitietsanpham2.html"> Micro không dây JKAudio B9, Cảm biết gia tốc</a>
+                </h6>
+                <div class="cardGia">
+                  5.990.000 đ
+                </div>
+                <div class="row">
+                  <div class="container">
+                    <div class="thongtin">
+                      <p><s>6.600.000đ</s> <span class="discount">-21%</span></p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="row">
+                  <div class="container">
+                    <div class="thongtin">
+                      <p>Quà trị giá: <span class="gift">249.000đ</span></p>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+
+              <!-- viet doan nay-->
+              <div class="carh h-100 moTaSanPham">
+                <div class="container">
+
+                  <h5>Micro không dây JKAudio B9, Cảm biết gia tốc</h5>
+
+                  <h6 style="color: red;">5.990.000 đ</h6>
+
+                  <b>Bảo hành</b>
+                  <p><i class="fas fa-check-square"></i> Bảo hành 12 thánh một đổi một trong vòng 15 ngày <a
+                      href="#">Xem Chính Sách</a></p>
+                  <p><i class="fas fa-check-square"></i> Gía ở trên đã bao gồm VAT 10%</p>
+                  <p><i class="fas fa-check-square"></i> MIỄN PHÍ GIAO HÀNG toàn địa bàn thành phố</p>
+                  <p><b>Kho Hàng: </b>còn hàng</p>
+                  <hr>
+                  <p><b>Mô tả tóm tắt: </b>Âm thanh trong trẻo, thiết bị hiện đại, phong cách mới mẻ.</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end san pham 7-->
+
+           <!-- san pham 8-->
+           <div class="col-lg-4 col-md-6 mb-4">
+
+            <div class="card h-100 chiTietSanPham">
+
+              <a href="Chitietsanpham2.html"><img class="card-img-top" src="../image/sanpham/mk5.jpg" alt=""></a>
+
+              <div class="card-body">
+                <h6 class="card-title">
+                  <a href="Chitietsanpham2.html"> Micro có dây Wharfedale DM5.0s, Dây dài 3m</a>
+                </h6>
+                <div class="cardGia">
+                    1.190.000 đ
+                </div>
+                <div class="row">
+                  <div class="container">
+                    <div class="thongtin">
+                      <p><s>1.400.000đ</s> <span class="discount">-7%</span></p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="row">
+                  <div class="container">
+                    <div class="thongtin">
+                      <p>Quà trị giá: <span class="gift">249.000đ</span></p>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+
+              <!-- viet doan nay-->
+              <div class="carh h-100 moTaSanPham">
+                <div class="container">
+
+                  <h5>Micro có dây Wharfedale DM5.0s, Dây dài 3m</h5>
+
+                  <h6 style="color: red;">1.190.000 đ</h6>
+
+                  <b>Bảo hành</b>
+                  <p><i class="fas fa-check-square"></i> Bảo hành 12 thánh một đổi một trong vòng 15 ngày <a
+                      href="#">Xem Chính Sách</a></p>
+                  <p><i class="fas fa-check-square"></i> Gía ở trên đã bao gồm VAT 10%</p>
+                  <p><i class="fas fa-check-square"></i> MIỄN PHÍ GIAO HÀNG toàn địa bàn thành phố</p>
+                  <p><b>Kho Hàng: </b>còn hàng</p>
+                  <hr>
+                  <p><b>Mô tả tóm tắt: </b>Âm thanh trong trẻo, thiết bị hiện đại, phong cách mới mẻ.</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end san pham 8-->
+
+          <!-- san pham 9-->
+          <div class="col-lg-4 col-md-6 mb-4">
+
+            <div class="card h-100 chiTietSanPham1">
+
+              <a href="Chitietsanpham2.html"><img class="card-img-top" src="../image/sanpham/mk6.jpg" alt=""></a>
+
+              <div class="card-body">
+                <h6 class="card-title">
+                  <a href="Chitietsanpham2.html"> Micro JKaudio B1 Pro, Tích hợp Echo</a>
+                </h6>
+                <div class="cardGia">
+                    1.490.000 
+                </div>
+                <div class="row">
+                  <div class="container">
+                    <div class="thongtin">
+                      <p><s>2.300.000đ</s> <span class="discount">-10%</span></p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="row">
+                  <div class="container">
+                    <div class="thongtin">
+                      <p>Quà trị giá: <span class="gift">249.000đ</span></p>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+
+              <!-- viet doan nay-->
+              <div class="carh h-100 moTaSanPham">
+                <div class="container">
+
+                  <h5>Micro JKaudio B1 Pro, Tích hợp Echo</h5>
+
+                  <h6 style="color: red;">1.490.000 đ</h6>
+
+                  <b>Bảo hành</b>
+                  <p><i class="fas fa-check-square"></i> Bảo hành 12 thánh một đổi một trong vòng 15 ngày <a
+                      href="#">Xem Chính Sách</a></p>
+                  <p><i class="fas fa-check-square"></i> Gía ở trên đã bao gồm VAT 10%</p>
+                  <p><i class="fas fa-check-square"></i> MIỄN PHÍ GIAO HÀNG toàn địa bàn thành phố</p>
+                  <p><b>Kho Hàng: </b>còn hàng</p>
+                  <hr>
+                  <p><b>Mô tả tóm tắt: </b>Âm thanh trong trẻo, thiết bị hiện đại, phong cách mới mẻ.</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- end san pham 3-->
+
+        </div>
+        <!-- /.row -->
+
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+        </ul>
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+
+  <!-- Footer -->
+  <footer class="py-5 my-3 bg-white">
+    <div class="container ">
+      <div class="row">
+        <div class="col-6 ulfooter">
+          <h5 xss=removed>Tấn Phát Store</h5>
+          <hr>
+
+          <p>Địa chỉ: 42 Liên khu 4-5, Bình Hưng Hòa B, Bình Tân, Hồ Chí Minh</p>
+          <p>Hotline bán hàng: 0929528914 (Tấn Phát)</p>
+          <p>Hotline kỹ thuật: 0929528914 (Tấn Phát)</p>
+          <p>Email: btphat11321@gmail.com</p>
+          <div class="container">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-google-plus"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </div>
+
+        </div>
+
+        <div class="col-3 ulfooter">
+          <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+          <hr>
+
+          <p><a href="gioithieu.html">Chính sách đổi trả hàng</a></p>
+          <p><a href="gioithieu.html">Chính sách vận chuyển</a></p>
+          <p><a href="gioithieu.html">Chính sách bán hàng online</a></p>
+          <p><a href="gioithieu.html">Chính sách bảo hành</a></p>
+          <p><a href="gioithieu.html">Chính sách trả góp</a></p>
+
+
+        </div>
+
+        <div class="col-3 ulfooter">
+          <h5>VỀ TẤN PHÁT STORE</h5>
+
+          <hr>
+
+
+          <p><a href="gioithieu.html">Giới thiệu</a></p>
+          <p><a href="lienhe.html">Liên hệ</a></p>
+          <p><a href="#">Tuyển dụng</a></p>
+          <p><a href="tintuc.html">Tin tức</a></p>
+          <p><a href="#">Hệ thống cửa hàng</a></p>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+  <div class="bg-light contaier-fluid " style="font-size: 13px;color: slategray;text-align: center;">
+    ©2024 Tấn Phát Store Copyright, All Rights Reserved.
+    <br>
+    <br>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/Home.js"></script>
+  <script src="../js/dangnhap.js"></script>
+</body>
+
+</html>

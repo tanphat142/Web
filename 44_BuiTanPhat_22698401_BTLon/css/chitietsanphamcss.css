@@ -1,0 +1,157 @@
+ul li span {
+    
+    color:green;
+    background-color: green;
+    
+}
+
+.chinhanh{
+    width: 8%;
+
+}
+
+.thongtin{
+    padding: 20px;
+}
+
+.carousel{
+    background-color: cornflowerblue;
+}
+.table1 {
+    font-size: 13px;
+    display: inline;
+}
+.table2 tr{
+    border-bottom: 1px solid rgb(209, 203, 203);
+}
+.c1{
+    padding-right: 40px;
+    margin-bottom: 10px;
+    width: 50%;
+   
+}
+.c2{
+    padding-bottom: 10px;
+    
+}
+
+span.saving {
+    color: gray; 
+    font-weight: bold; 
+    margin-left: 6px;
+}
+span.discount {
+    color: gray; 
+}
+span.installment {
+    border: none; 
+    border-radius: 5px; 
+    color: white; 
+    background: orange;
+}
+
+.giacu {
+    margin-left: 25px;
+}
+
+#info-container {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    border-radius: 5px;
+    background: rgb(213, 243, 243);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#info-container .col-xs-4,
+#info-container .col-sm-4,
+#info-container .com-md-4,
+#info-container .col-lg-4,
+#info-container .col-xl-4 {
+    border-right: 1px solid #ccc; /* Tạo border phía bên phải của mỗi cột */
+    padding-right: 10px; /* Tạo khoảng cách giữa border và nội dung của cột */
+}
+
+#info-container .col-xs-4:last-child,
+#info-container .col-sm-4:last-child,
+#info-container .com-md-4:last-child,
+#info-container .col-lg-4:last-child,
+#info-container .col-xl-4:last-child {
+    border-right: none; /* Loại bỏ border phía bên phải của cột cuối cùng */
+}
+
+.rounded-btn {
+    border-radius: 30px; 
+    font-size: 14px; 
+    line-height: 1; 
+    width: 100%; 
+}
+
+.rounded-btn span,
+.rounded-btn p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.c1 {
+    font-weight: bold;
+}
+
+#thongso {
+    border: none; /* Loại bỏ viền */
+    padding: 10px;
+    border-radius: 10px; /* Làm tròn góc */
+    background-color: #fff; /* Thêm màu nền nếu cần */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho hiệu ứng nhẹ nếu cần */
+    margin-bottom: 20px;
+}
+
+
+.table2 tr:nth-child(even) {
+    background-color: #f2f2f2; /* Đặt màu nền cho các hàng chẵn */
+}
+
+.table2 tr:nth-child(odd) {
+    background-color: #ffffff; /* Đặt màu nền cho các hàng lẻ */
+}
+
+.table2 td {
+    border: none; /* Loại bỏ border của các ô trong bảng */
+}
+
+.table2 {
+    border-collapse: collapse !important; /* Loại bỏ khoảng cách giữa các ô và làm cho border hợp nhất */
+}
+
+#thongso img:hover {
+    opacity: 0.7;
+}
+
+.font1 {
+    font-size: 15px;
+    line-height: 1;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.center-button button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.center-button button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+

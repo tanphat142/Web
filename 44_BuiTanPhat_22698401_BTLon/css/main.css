@@ -1,0 +1,324 @@
+
+
+body{
+    padding-top: 60px ;
+}
+
+header{
+    background-color: salmon;
+    padding: 10px;
+    background-color: snow;
+}
+
+.ulfooter  li{
+  list-style-type: none;
+  padding: 2px;
+  
+}
+
+.divsanpham{
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    margin-top: 20px;
+}
+
+.divsanpham h3{
+    
+    border-bottom: 1px solid lightgray ;
+    padding: 10px;
+}
+
+#logo{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.congtru{
+    float: right;
+}
+
+#boloc{
+    
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+#nutloc{
+    float: right;
+}
+
+
+.tieudesanpham .tren{
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+}
+
+.tieudesanpham .tren p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tieudesanpham .tren button{
+  float: right;
+}
+
+.tieudesanpham .tren button ul {
+  width: 200px;
+  list-style-type: none;
+  display: none;
+  position: relative;
+  padding: 0px;
+  background-color: white;
+  z-index: 10;
+}
+
+.tieudesanpham .tren button:hover ul{
+    
+    position: absolute;
+    display: block;
+    top: 50px;
+    
+}
+
+.tieudesanpham .tren button:hover ul li{
+    padding: 10px;
+}
+
+.tieudesanpham .duoi{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+}
+
+.tieudesanpham .duoi button{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.tieudesanpham .duoi .btnvang{
+    background-color: #F2E70F;
+
+}
+
+.tieudesanpham .duoi .btndo{
+    background-color: #F85928;
+}
+
+.dinhdanga > a{
+    text-decoration: none;
+    color:none;
+    margin-left: 10px;
+}
+
+#odangnhap{
+    position: relative;
+}
+
+
+
+#odangnhap  #bangdangnhap{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    border-radius: 10px;
+   padding-top: 20px;
+    text-align: center;
+    display: none;
+}
+
+
+#bangdangnhap button{
+    width: 80%;
+    
+    padding: 10px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+#bangdangnhap img{
+    width: 10%;
+    float: left;
+    
+}
+
+#slide{
+    padding-left: 10px;
+}
+
+
+#menuloai{
+    margin-top: 25px;
+    padding: 5px;
+    
+}
+
+#menuloai a{
+  color: black;
+  font-size: 15px;
+  position: relative;
+  text-decoration: none;
+ 
+
+  
+}
+
+#menuloai a i.fa-angle-right {
+   float: right;
+}
+
+#menuloai a div{
+    display: none;
+  
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+   
+    width: 670px;
+    height: 300px;
+    left: 195px;
+    top: -2px;
+    box-shadow: 1px 5px 5px darkgrey, -2px -2px 5px darkgrey ;
+    
+    
+
+}
+
+
+#slide img{
+    height: 120%;
+    border-radius: 5px;
+}
+
+
+#hinhbanner {
+    margin-top: 25px;
+    padding-left: 5px;
+
+   
+}
+
+#hinhbanner {
+    
+    padding: 0px 0px 0px 5px
+}
+
+#hinhbanner  img{
+    width: 100%;
+    margin-bottom: 5px;
+    
+}
+
+.card{
+    border: 1px solid white;
+    
+}
+
+.card-title a{
+    color: #474c51;
+ 
+}
+
+.cardGia{
+    margin-top: 85px;
+    flex-basis: 130px;
+    width: 130px;
+    height: 28px;
+    border-radius: 15px;
+    background-color: #e63213;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.card-title{
+    font-size: 17px;
+}
+.card-title a{
+    text-decoration: none;
+}
+.card-body:hover .card-title a{
+    color:#0168fa
+}
+
+
+
+.dong2hinhanh{
+    padding: 0px;
+    
+}
+
+
+
+.dong2hinhanh div img{
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+}
+
+
+.dong3hinhanh{
+
+    padding: 0px;
+}
+
+.dong3hinhanh div img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+div.divsanpham h3{
+    font-size: 23px;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+
+div.divsanpham a{
+    text-transform: none;
+    float: right;
+    font-size: 16px;
+}
+
+div.dongcuoi{
+    padding: 0px;
+}
+
+div.dongcuoi div{
+    margin: 0px;
+    
+   
+}
+
+div.dongcuoi div img{
+    
+    margin: 0px;
+    width: 100%;
+    height: 200px;
+}
+
+
+
+.card:hover{
+    
+    border: 1px solid whitesmoke;
+    border-radius: 5px solid black;
+    box-shadow: 3px 3px 3px whitesmoke, -3px -3px 3px whitesmoke;
+}
+
+.card:hover img{
+    padding: 5px;
+}
+

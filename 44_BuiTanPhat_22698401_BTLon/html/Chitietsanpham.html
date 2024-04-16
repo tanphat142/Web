@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết sản phẩm</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" href="../css/chitietsanphamcss.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="bg-light">
+
+
+  <header class="fixed-top" style="background: #f1f1f1;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3" style="margin-top: -10px;">
+          <div class="container logo">
+            <p style="display:inline; font-size: 150%;"><a href="TrangChu.html" style="color: black;">Tấn Phát Store</a></p>
+          </div>
+          <p style="display:inline" class="hethongbanle">Hệ thống bán lẻ uy tín</p>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+          <form>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Tên phụ kiện, hãng sản xuất...">
+              <button class="btn btn-warning"><i class="fas fa-search"></i></button>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="margin-top: -4px;">
+          <p class="hotline">19008948</p>
+          <p class="hotro">Hotline hỗ trợ bán hàng</p>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dinhdanga">
+          <div class="row">
+            <div style="padding: 0px 2px 0px 0px; text-align: center;" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <a href="GioHang.html"><button style="width: 100%;" class="btn btn-outline-warning"><i class="fas fa-shopping-cart"></i> Giỏ hàng </button></a>
+            </div>
+            <div id="odangnhap" class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding: 0px 0px 0px 2px;">
+              <button id="nutdangnhap" class="btn btn-outline-warning"><i class="fas fa-users"></i> Đăng nhập </button>
+              <div id="bangdangnhap">
+                <a href="dangnhap.html"><button class="btn btn-warning"><i class="fas fa-users"></i> Đăng nhập</button></a>
+                <a href="dangky.html"><button class="btn btn-warning"><i class="fas fa-registered"></i> Tạo tài khoản</button></a>
+                <a href="dangnhap.html"><button class="btn btn-primary"><img src="../image/logo/fb.png"> Đăng nhập Facebook</button></a>
+                <a href="dangnhap.html"><button class="btn btn-danger"><img src="../image/logo/google.jpg"> Đăng nhập Google </button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ff6a00; height: 50px;">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav" style="font-size: 16px;">
+                <li class="nav-item active">
+                    <a class="nav-link" href="TrangChu.html" style="color: #f1f1f1; font-weight: bold;"><i class="fa fa-home"></i>Trang chủ</a>
+                </li>
+                <li class="nav-item" id="cap1">
+                    <a class="nav-link" href="DanhSach.html"><i class="fa fa-th-large"></i>Sản phẩm</a>
+                    <ul class="submenu" id="cap2">
+                        <li><a href="DanhSach.html">Dàn Karaoke</a></li>
+                        <li><a href="DanhSach1.html">Loa Karaoke</a></li>
+                        <li><a href="DanhSach2.html">Micro Karaoke</a></li>
+                        <li><a href="DanhSach3.html">Công suất Karaoke</a></li>
+                        <li><a href="DanhSach4.html">Amply Karaoke</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tintuc.html"><i class="fa fa-newspaper-o"></i>Tin tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gioithieu.html"><i class="fa fa-info-circle"></i>Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lienhe.html"><i class="fa fa-phone"></i>Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <!-- Contents -->
+
+  <div class="my-4">
+    <div class="container bg-white">
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 com-md-4 col-lg-4 col-xl-4 my-5">
+          <div id="demo" class="carousel slide " data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active" style="background-color:rgb(121, 115, 110)"></li>
+              <li data-target="#demo" data-slide-to="1" style="background-color:rgb(121, 115, 110)"></li>
+              <li data-target="#demo" data-slide-to="2" style="background-color:rgb(121, 115, 110)" li>
+              <li data-target="#demo" data-slide-to="3" style="background-color:rgb(121, 115, 110)"></li>
+
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../image/chitietsanpham/1.jpg" alt="hinh1" style="width: 100%;height: 100%;">
+                <div class="carousel-caption">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../image/chitietsanpham/2.jpg" alt="hinh2" style="width: 100%;height: 100%;">
+                <div class="carousel-caption">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../image/chitietsanpham/3.jpg" alt="hinh3" style="width: 100%;height: 100%;">
+                <div class="carousel-caption">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../image/chitietsanpham/4.jpg" alt="hinh4" style="width: 100%;height: 100%;">
+                <div class="carousel-caption">
+                </div>
+              </div>
+
+
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col-xs-8 col-sm-8 com-md-8 col-lg-8 col-xl-8">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 com-md-12 col-lg-12 col-xl-12">
+              <h3>Loa Wharfedale ANGLO E12, Bass 30cm, công suất 400W, Từ Neo</h3>
+              <p> Mã SP: 003085</p>
+              <b style="color: rgb(51, 121, 185);">Thương hiệu: Anh </b> <small class="text-muted">&#9733; &#9733;
+                &#9733; &#9733; &#9734;</small>
+              <b style="color: rgb(51, 121, 185);"> 142 Đánh giá </b>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-xs-7 col-sm-7 com-md-7 col-lg-7 col-xl-7">
+              <p style="font-size: 20px;">Giá bán: <b style="color:orange;font-size: 25px;">52.290.000đ</b></p>
+              <p>Giá cũ: <s class="giacu" style="color: gray; font-weight: bold;">59.000.000đ</s></p>
+              <p>Tiết kiệm: <span class="saving">6.710.000đ</span> <span class="discount">(-11%)</span> <span class="installment">Trả góp 0%</span></p>
+              <div class="container">
+
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-info">KHUYẾN MÃI, ƯU ĐÃI</li>
+                  <li class="list-group-item list-group-item-light">
+                    <ul>
+                      <li style="font-size: 14px;">Tặng giá 10 mét dây loa trị giá: 300.000đ</li>
+                      <li style="font-size: 14px;">Tặng 2 Jack Neutrik trị giá 200.000đ</li>
+                      <li style="font-size: 14px;">Giao hàng miễn phí 5 - 30Km</li>
+                      <li style="font-size: 14px;">Đền gấp 10 nếu phát hiện hàng NHÁI</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="thongtin">
+                <div class="row" id="info-container">
+                  <div class="col-xs-4 col-sm-4 com-md-4 col-lg-4 col-xl-4">
+                      <span>Bảo hành</span><br>
+                      <span style="font-weight: bold;">12 tháng</span>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 com-md-4 col-lg-4 col-xl-4">
+                      <span>1 đổi 1</span><br>
+                      <span style="font-weight: bold; color: rgb(66, 66, 249);">15 ngày</span>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 com-md-4 col-lg-4 col-xl-4">
+                      <span>Thương hiệu</span><br>
+                      <span style="font-weight: bold;">Anh Quốc</span>
+                  </div>
+                </div>
+                
+                <div class="row">
+
+                  <div class="col-xs-6 col-sm-6 com-md-6 col-lg-6 col-xl-6">
+                    <a href="GioHang.html">
+                      <button class="btn btn-danger rounded-btn" style="width: 100%;">
+                        <span>ĐẶT MUA NGAY</span>
+                        <p>Giao hàng nhanh</p>
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="col-xs-6 col-sm-6 com-md-6 col-lg-6 col-xl-6">
+                    <a href="./Chitietsanpham.html">
+                      <button class="btn btn-primary rounded-btn" style="width: 100%; ">
+                        <span>MUA TRẢ GÓP 0% </span>
+                        <p>Xét duyệt nhanh</p>
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+
+                <div class="row" style="margin-top: 5px;">
+                  <div class="container">
+                    <a href="./Chitietsanpham.html">
+                      <button type="button" class="btn btn-success rounded-btn" style="width:100%">MUA TRẢ GÓP ONLINE 
+                        <p style="font-size: 13px;">Qua thẻ VISA, MASTER, JCB</p>
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+            <div class="col-xs-5 col-sm-5 com-md-5 col-lg-5 col-xl-5 table">
+              <table class="table table-bordered" style="font-size:14px">
+                <thead>
+                  <tr>
+                    <td> <img class="chinhanh" src="../image/chitietsanpham/box@2x.png" alt="">
+                      <span>Trọn bộ gồm có: dây cắm</span>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> <img class="chinhanh" src="../image/chitietsanpham/bao-hanh@2x.png" alt="">
+                      <span>Bảo hành 12 tháng </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img class="chinhanh" src="../image/chitietsanpham/doi-tra@2x.png" alt="">
+                      <span>1 đổi 1 trong 15 ngày nếu lỗi do NSX</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img class="chinhanh" src="../image/chitietsanpham/tel@2x.png" alt="">
+                      <span>Liên hệ CSKH 19008948</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img class="chinhanh" src="../image/chitietsanpham/email@2x.png" alt="">
+                      <span>Email: btphat11321@gmail.com</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <br>
+
+              <div class="col-xs-12 col-sm-12 com-md-12 col-lg-12 col-xl-12"
+                style="background-color:rgb(243, 240, 240);">
+
+                <P>Bạn cần chúng tôi gọi lại TƯ VẤN</P>
+                <div class="container">
+                  <form action="/action_page.php">
+                    <div class="form-group">
+                      <input style="font-size:13px;" type="text" class="form-control" id="usr" name="username"
+                        placeholder="Nhập số điện thoại của Anh/Chị">
+                    </div>
+                  </form>
+                  <div>
+
+                    <button type="button" class="btn btn-warning rounded-btn" style="width: 100%; margin-bottom: 10px">
+                      <p style="color:white;font-weight:bold;font-size: 13px;display: inline;">HÃY GỌI LẠI CHO TÔI
+                        !!! </p>
+                      <P style="color:white;font-size: 12px;display: inline;">Tôi đang rất quan tâm sản phẩm này</P>
+                    </button>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- chi tiết -->
+    </div>
+
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="row my-3 bg-white">
+      <div class="col-xs-8 col-sm-8 com-md-8 col-lg-8 col-xl-8">
+        <br>
+        <h3>Đánh giá thiết kế Loa Wharfedale Anglo E12</h3>
+        <p><b><a href="#">Loa Wharfedale Anglo E12</a></b> được chế tác kỳ công về kỹ thuật với Dòng ANGLO, 
+          mang lại độ chính xác âm thanh cao nhất. Với các thành phần cao cấp dành riêng cho bộ chuyển đổi và thiết kế vỏ bọc mới, 
+          dòng ANGLO mới mang đến một cách tiếp cận âm thanh thực sự mới.</p>
+        <br>
+        <img src="../image/chitietsanpham/thietke1.jpg" alt=""
+          style="width: 80%;padding-left: 20px; "><br>
+        <p>Thuộc dòng Anglo E-series, Wharfedale Anglo E12 được thừa hưởng những ưu điểm tuyệt vời về thiết kế của các mẫu loa trước đó. 
+          Mẫu loa này có vẻ ngoài mạnh mẽ, sang trọng, kích thước không quá lớn, thoải mái di chuyển, bố trí và lắp đặt. Thùng loa được kết cấu từ ván ép bạch dương dày, 
+          nhiều lớp chất lượng cao giúp tăng tính thẩm mỹ và độ bền cho sản phẩm. Lớp sơn đen mờ giúp giảm trầy xước hiệu quả.</p><br>
+        <img src="../image/chitietsanpham/thietke2.jpg" alt=""
+        style="width: 80%;padding-left: 20px; "><br>
+
+        <h3>Đánh giá chất lượng Loa Wharfedale Anglo E12</h3>
+        
+        <p style="font-size: 20px;"><b>2 loa 2 đường tiếng</b></p>
+        <p><b><a href="#">Loa Wharfedale Anglo E12</a></b> được thiết kế dòng loa full toàn dải có cấu tạo với 2 loa 2 đường tiếng cao cấp, 
+          trải qua quá trình nghiên cứu kĩ lưỡng mang đến độ chính xác âm thanh cực cao. Được trang bị củ trầm âm trầm có đường kính 30 cm, 
+          Anglo E12 tạo ra âm thanh tròn và ấm, giúp giọng hát trở nên đặc biệt và gợi cảm hơn.</p>
+        <br>
+        <img src="../image/chitietsanpham/2loa.jpg" alt=""
+          style="width: 80%;padding-left: 20px; "><br> 
+        
+        <p style="font-size: 20px;"><b>Sử dụng củ loa từ Neo cao cấp</b></p>
+        <p><b><a href="#">Loa Wharfedale Anglo E12</a></b> là dòng loa karaoke siêu bền với thiết kế nam châm đặc biệt do Neo sản xuất có một số ưu điểm lớn: 
+          nó làm cho loa nhẹ hơn rất nhiều, cung cấp âm thanh phát ra mạnh hơn, rộng hơn và độ phóng đại cao hơn nhiều so với các loa nam châm truyền thống khác. 
+          Đây được coi là đặc điểm lớn nhất của mẫu loa karaoke này.</p>
+        <p>Ngoài ra, polyethylene được sử dụng cho màng loa, tạo ra âm thanh chất lượng cao rõ ràng và trung thực. 
+          Một loa tweeter kèn bằng nhôm hình cầu bên trong trình điều khiển nén cũng góp phần tạo nên độ rõ ràng cho tần số cao. năng lực mạnh mẽ</p>
+        
+        <p style="font-size: 20px;"><b>Công suất 400W/1600W</b></p> 
+        <p>Mẫu loa này còn có công suất lớn có thể điều chỉnh cực đại lên đến 1600W, công suất phát ra loa liên tục đạt 400W 
+          kết hợp với nhiều thiết bị âm thanh karaoke khác cho ra âm thanh mạnh mẽ, treble chi tiết, chơi hay mọi thể loại nhạc trong mọi không gian.</p>
+        <br>
+        <img src="../image/chitietsanpham/congsuat.jpg" alt=""
+          style="width: 80%;padding-left: 20px; "><br> 
+
+        <p style="font-size: 20px;"><b>Dải tần rộng</b></p> 
+        <p><b><a href="#">Loa Wharfedale Anglo E12</a></b> hoạt động trên dải tần rộng từ 55 Hz đến 20 kHz, không bị méo tiếng, méo tiếng, hạn chế hiện tượng âm giúp tái tạo âm thanh hoàn hảo. 
+          Loa Wharfedale Anglo E12 có khả năng khuếch đại tín hiệu tốt và rộng khắp căn phòng, ngoài ra còn có góc phủ âm rộng của âm thanh. 
+          Dù bạn đứng ở đâu cũng có thể cảm nhận được chất lượng âm thanh chính xác, rõ ràng và chi tiết nhất.</p>
+
+        <p style="font-size: 20px;"><b>Phối ghép dễ dàng</b></p> 
+        <p><b><a href="#">Loa Wharfedale Anglo E12</a></b> có khả năng tương thích cao mà không lo ảnh hưởng đến các thiết bị âm thanh khác trong hệ thống của bạn và có thể dễ dàng ghép 
+          nối với các thiết bị khác bằng các cổng kết nối được thiết kế sẵn.</p> 
+        <br>
+        <img src="../image/chitietsanpham/ghepnoi.jpg" alt=""
+          style="width: 80%;padding-left: 20px; "><br> 
+      </div>
+      <div class="col-xs-4 col-sm-4 com-md-4 col-lg-4 col-xl-4 bg-light" style="padding: 0px 0px 0px 10px; ">
+        <div class="bg-white">
+          <div class="container" id="thongso">
+            <H5 style="padding-top:20px">Thông số kỹ thuật</H5>
+            <table class="table2">
+              <tr>
+                <td class="c1">Thiết kế</td>
+                <td class="c2">2 loa 2 đường tiếng</td>
+              </tr>
+              <tr>
+                <td class="c1">Kiểu loa</td>
+                <td class="c2">Loa full</td>
+              </tr>
+              <tr>
+                <td class="c1">Loa Bass</td>
+                <td class="c2">Ferrite 12 inch (305mm)</td>
+              </tr>
+              <tr>
+                <td class="c1">Loa Treble</td>
+                <td class="c2">NEO 1,5 inch (38mm)</td>
+              </tr>
+              <tr>
+                <td class="c1">Dải tần</td>
+                <td class="c2">(-10dB) 55Hz - 20kH</td>
+              </tr>
+              <tr>
+                <td class="c1">Công suất</td>
+                <td class="c2">400W / 800W / 1600W</td>
+              </tr>
+              <tr>
+                <td class="c1">Độ nhạy</td>
+                <td class="c2">(2.83V / 1m)</td>
+              </tr>
+              <tr>
+                <td class=" c1">SPL tối đa</td>
+                <td class="c2">129dB</td>
+              </tr>
+              <tr>
+                <td class=" c1">Trở kháng</td>
+                <td class="c2">8Ω</td>
+              </tr>
+              <tr>
+                <td class=" c1">Kích thước</td>
+                <td class="c2">600 x 350 x 388mm</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        
+        <div class="bg-white">
+          <div class="container" id="thongso">
+            <H5 style="padding-top:20px">Sản phẩm liên quan</H5>
+            <div class="row my-2">
+              <div class="col-xs-4 col-sm-4 com-md-4 col-lg-4 col-xl-4">
+                <a href="./Chitietsanpham.html"><img src="../image/sanpham/anh15.jpg" alt=""
+                  style="width:100%; transition: opacity 0.3s;"></a>
+              </div>
+              <div class="col-xs-8 col-sm-8 com-md-8 col-lg-8 col-xl-8">
+                <p style="font-size: 15px;"><a href="Chitietsanpham.html"
+                    style="text-decoration: none; color: black; font-weight: bold;">Loa Wharfedale WH12 NEO, Bass 30cm, 400W</a></p>
+                <p class="font1" style="color: orange;">Giá bán: <span style="color: red; font-size: 20px; font-weight: bold;">33.500.000đ</span></p>
+                <p class="font1">Giá cũ: <s>43.800.000đ</s></p>
+                <p class="font1" style="color: rgb(99, 99, 245);"><a style="text-decoration: none;" href="Chitietsanpham.html">Xem chi tiết</a></p>
+              </div>
+            </div>
+
+            <div class="row my-2">
+              <div class="col-xs-4 col-sm-4 com-md-4 col-lg-4 col-xl-4">
+                <a href="./Chitietsanpham.html"><img src="../image/sanpham/anh16.jpg" alt=""
+                  style="width:100%; transition: opacity 0.3s;"></a>
+              </div>
+              <div class="col-xs-8 col-sm-8 com-md-8 col-lg-8 col-xl-8">
+                <p style="font-size: 15px;"><a href="Chitietsanpham.html"
+                    style="text-decoration: none; color: black; font-weight: bold;">Loa Wharfedale ANGLO X12A, Bass 30cm, Công Suất 400W</a></p>
+                <p class="font1" style="color: orange;">Giá bán: <span style="color: red; font-size: 20px; font-weight: bold;">24.800.000đ</span></p>
+                <p class="font1">Giá cũ: <s>35.000.000đ</s></p>
+                <p class="font1" style="color: rgb(99, 99, 245);"><a style="text-decoration: none;" href="Chitietsanpham.html">Xem chi tiết</a></p>
+              </div>
+            </div>
+
+            <div class="row my-2">
+              <div class="col-xs-4 col-sm-4 com-md-4 col-lg-4 col-xl-4">
+                <a href="./Chitietsanpham.html"><img src="../image/sanpham/anh17.jpg" alt=""
+                  style="width:100%; transition: opacity 0.3s;"></a>
+              </div>
+              <div class="col-xs-8 col-sm-8 com-md-8 col-lg-8 col-xl-8">
+                <p style="font-size: 15px;"><a href="Chitietsanpham.html"
+                    style="text-decoration: none; color: black; font-weight: bold;">Loa Wharfedale WH10 NEO, Bass 25, 300W</a></p>
+                <p class="font1" style="color: orange;">Giá bán: <span style="color: red; font-size: 20px; font-weight: bold;">28.500.000đ</span></p>
+                <p class="font1">Giá cũ: <s>33.800.000đ</s></p>
+                <p class="font1" style="color: rgb(99, 99, 245);"><a style="text-decoration: none;" href="Chitietsanpham.html">Xem chi tiết</a></p>
+              </div>
+            </div>
+            <a href="DanhSach1.html" class="center-button" style="text-decoration: none;"><button>Xem thêm sản phẩm khác</button></a>
+          </div>
+        </div>
+
+        <div class="bg-white">
+          <div class="container" id="thongso">
+            <h5 style="padding-top: 20px;">Tin tức liên quan</h5>
+            <div class="row my-2">
+              <div class="col-xs-4 col-sm-4 com-md-4 col-lg-4 col-xl-4">
+                <a href="#"><img src="../image/sanpham/anh18.jpg" alt=""
+                  style="width:100% ;"></a>
+              </div>
+              <div class="col-xs-8 col-sm-8 com-md-8 col-lg-8 col-xl-8">
+                <p style="font-size: 15px; display: inline;"><a href="https://hdradio.vn/top-10-combo-dan-karaoke-tet-duoc-yeu-thich-nhat-hien-nay.html" target="_blank"
+                    style="text-decoration: none; color: black;">TOP 10 Combo Dàn Karaoke Tết Được Yêu Thích Nhất 2024 - Bạn Không Thể Bỏ Qua</a></p>
+                <p style="color: gray;font-size: 13px;">1 năm trước - lượt xem : 3360</p>
+
+              </div>
+
+            </div>
+
+            <div class="row my-2">
+              <div class="col-xs-4 col-sm-4 com-md-4 col-lg-4 col-xl-4">
+                <a href="#"><img
+                  src="../image/sanpham/anh19.jpg"
+                  alt="" style="width:100% ;"></a>
+              </div>
+              <div class="col-xs-8 col-sm-8 com-md-8 col-lg-8 col-xl-8">
+                <p style="font-size: 15px; display: inline;"><a href="https://hdradio.vn/hat-karaoke-tren-tivi-khong-can-amply.html" target="_blank"
+                    style="text-decoration: none; color: black;">Cách hát karaoke trên tivi không cần amply cực đơn giản!</a></p>
+                <p style="color: gray;font-size: 13px;">1 năm trước - lượt xem : 3834</p>
+
+              </div>
+
+            </div>
+
+            <div class="row my-2">
+              <div class="col-xs-4 col-sm-4 com-md-4 col-lg-4 col-xl-4">
+                <a href="#"><img
+                  src="../image/sanpham/anh20.jpg"
+                  alt="" style="width:100% ;"></a>
+              </div>
+              <div class="col-xs-8 col-sm-8 com-md-8 col-lg-8 col-xl-8">
+                <p style="font-size: 15px; display: inline;"><a href="https://hdradio.vn/top-19-dan-karaoke-gia-dinh-hay-nhat-hien-nay.html" target="_blank"
+                    style="text-decoration: none; color: black;">Điểm Danh Top 19 Dàn Karaoke Gia Đình Hay Nhất Hiện Nay</a></p>
+                <p style="color: gray;font-size: 13px;">1 năm trước - lượt xem : 4795</p>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <footer class="py-5 my-3 bg-white">
+    <div class="container ">
+      <div class="row">
+        <div class="col-6 ulfooter">
+          <h5 xss=removed>Tấn Phát Store</h5>
+          <hr>
+
+          <p>Địa chỉ: 42 Liên khu 4-5, Bình Hưng Hòa B, Bình Tân, Hồ Chí Minh</p>
+          <p>Hotline bán hàng: 0929528914 (Tấn Phát)</p>
+          <p>Hotline kỹ thuật: 0929528914 (Tấn Phát)</p>
+          <p>Email: btphat11321@gmail.com</p>
+          <div class="container">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-google-plus"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </div>
+
+        </div>
+
+        <div class="col-3 ulfooter">
+          <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+          <hr>
+
+          <p><a href="gioithieu.html">Chính sách đổi trả hàng</a></p>
+          <p><a href="gioithieu.html">Chính sách vận chuyển</a></p>
+          <p><a href="gioithieu.html">Chính sách bán hàng online</a></p>
+          <p><a href="gioithieu.html">Chính sách bảo hành</a></p>
+          <p><a href="gioithieu.html">Chính sách trả góp</a></p>
+
+
+        </div>
+
+        <div class="col-3 ulfooter">
+          <h5>VỀ TẤN PHÁT STORE</h5>
+
+          <hr>
+
+
+          <p><a href="gioithieu.html">Giới thiệu</a></p>
+          <p><a href="lienhe.html">Liên hệ</a></p>
+          <p><a href="#">Tuyển dụng</a></p>
+          <p><a href="tintuc.html">Tin tức</a></p>
+          <p><a href="#">Hệ thống cửa hàng</a></p>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+  <div class="bg-light contaier-fluid " style="font-size: 13px;color: slategray;text-align: center;">
+    ©2024 Tấn Phát Store Copyright, All Rights Reserved.
+    <br>
+    <br>
+  </div>
+
+
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/Home.js"></script>
+  <script src="../js/dangnhap.js"></script>
+</body>
+
+</html>

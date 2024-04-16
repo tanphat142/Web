@@ -1,0 +1,100 @@
+.logo p{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: black;
+}
+.hethongbanle{
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    margin-left: 27px;
+    
+}
+.hotline{
+    margin-left: 30px;
+    font-weight: bold;
+    color: red;
+    font-size: 18px;
+    display: inline;
+}
+.hotro{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: black;
+    display: inline;
+}
+.fa-google-plus{
+    color: tomato;
+    transform: scale(2.5,2.5);
+    margin-right: 25px;
+}
+.fa-youtube-square{
+    color: red;
+    transform: scale(2.5,2.5);
+    margin-right: 25px;
+}
+.fa-twitter-square{
+    transform: scale(2.5,2.5);
+    margin-right: 25px;
+}
+.fa-facebook{
+    transform: scale(2.5,2.5);
+    margin-right: 25px;
+}
+
+.navbar-nav .nav-item {
+    position: relative;
+    margin: 10px 55px 0;
+}
+
+.navbar-nav .nav-item .submenu {
+    background-color: #f8f9fa; /* Màu nền của menu cấp 2 */
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.submenu a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #f1f1f1;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #f1f1f1; /* Màu chữ mặc định */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus{
+    color: #f1f1f1 !important; 
+}
+
+.navbar-nav .nav-item .nav-link i {
+    margin-right: 5px; /* Khoảng cách giữa biểu tượng và chữ */
+    opacity: 1; /* Độ trong suốt ban đầu */
+    transition: opacity 0.3s; /* Hiệu ứng chuyển đổi khi hover */
+}
+
+.navbar-nav .nav-item .nav-link:hover i {
+    opacity: 0.7; /* Giảm độ trong suốt khi hover */
+}
+
+
+
+
+

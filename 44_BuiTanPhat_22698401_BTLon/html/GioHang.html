@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+
+
+    <!-- Boostrap-->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icon-->
+    <link rel="stylesheet" href="../fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- File css-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/GioHang.css">
+    <link rel="stylesheet" href="../css/home.css">
+
+
+</head>
+
+<body class="bg-light">
+
+    <header class="fixed-top" style="background: #f1f1f1;">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3" style="margin-top: -10px;">
+              <div class="container logo">
+                <p style="display:inline; font-size: 150%;"><a href="TrangChu.html" style="color: black;">Tấn Phát Store</a></p>
+              </div>
+              <p style="display:inline" class="hethongbanle">Hệ thống bán lẻ uy tín</p>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+              <form>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Tên phụ kiện, hãng sản xuất...">
+                  <button class="btn btn-warning"><i class="fas fa-search"></i></button>
+                </div>
+              </form>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="margin-top: -4px;">
+              <p class="hotline">19008948</p>
+              <p class="hotro">Hotline hỗ trợ bán hàng</p>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dinhdanga">
+              <div class="row">
+                <div style="padding: 0px 2px 0px 0px; text-align: center;" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <a href="GioHang.html"><button style="width: 100%;" class="btn btn-outline-warning"><i class="fas fa-shopping-cart"></i> Giỏ hàng </button></a>
+                </div>
+                <div id="odangnhap" class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding: 0px 0px 0px 2px;">
+                  <button id="nutdangnhap" class="btn btn-outline-warning"><i class="fas fa-users"></i> Đăng nhập </button>
+                  <div id="bangdangnhap">
+                    <a href="dangnhap.html"><button class="btn btn-warning"><i class="fas fa-users"></i> Đăng nhập</button></a>
+                    <a href="dangky.html"><button class="btn btn-warning"><i class="fas fa-registered"></i> Tạo tài khoản</button></a>
+                    <a href="dangnhap.html"><button class="btn btn-primary"><img src="../image/logo/fb.png"> Đăng nhập Facebook</button></a>
+                    <a href="dangnhap.html"><button class="btn btn-danger"><img src="../image/logo/google.jpg"> Đăng nhập Google </button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ff6a00; height: 50px;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav" style="font-size: 16px;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="TrangChu.html" style="color: #f1f1f1; font-weight: bold;"><i class="fa fa-home"></i>Trang chủ</a>
+                    </li>
+                    <li class="nav-item" id="cap1">
+                        <a class="nav-link" href="#"><i class="fa fa-th-large"></i>Sản phẩm</a>
+                        <ul class="submenu" id="cap2">
+                            <li><a href="DanhSach.html">Dàn Karaoke</a></li>
+                            <li><a href="DanhSach1.html">Loa Karaoke</a></li>
+                            <li><a href="DanhSach2.html">Micro Karaoke</a></li>
+                            <li><a href="DanhSach3.html">Công suất Karaoke</a></li>
+                            <li><a href="DanhSach4.html">Amply Karaoke</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tintuc.html"><i class="fa fa-newspaper-o"></i>Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioithieu.html"><i class="fa fa-info-circle"></i>Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lienhe.html"><i class="fa fa-phone"></i>Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nội dung-->
+    <div class="content my-4 bg-white">
+        <div class="container">
+            <!-- Chi tiet san pham-->
+            <div class="row">
+                <div class="col-lg-12">
+
+
+                    <div class="row moihangchitiet">
+                        <div class="col-lg-2">
+                            <img style="width: 100px;" src="../image/giohang/anh1.jpg" alt="">
+
+                        </div>
+
+                        <div class="col-sx-5 col-sm-5 col-md-5  col-lg-5">
+                            <a href="Chitietsanpham4.html">Amply Boston BA200 (400W/2 Kênh, Bluetooth, DSP Chống Hú, 12Kg)</a>
+                            <br>
+
+
+                        </div>
+
+                        <div class="col-sx-2 col-sm-2 col-md-2  col-lg-2">
+                            <p class="tien">5.990.000 đ</p>
+
+                        </div>
+
+                        <div class="col-sx-3 col-sm-3 col-md-3  col-lg-3 nut">
+                            
+                            <button id="tru1" onclick="tru1()" >-</button><input class="soluong" type="text" value="1"><button id="cong1" onclick="cong1()" >+</button>
+                            <button><i class="far fa-trash-alt"></i> Xóa</button>
+
+                        </div>
+
+                      
+
+                    </div>
+
+
+
+                    <div class="row moihangchitiet">
+                        <div class="col-sx-2 col-sm-2 col-md-2  col-lg-2">
+                            <img style="width: 100px;" src="../image/giohang/anh2.jpg" alt="">
+
+                        </div>
+
+                        <div class="col-sx-5 col-sm-5 col-md-5  col-lg-5">
+                            <a href="#">Loa Electro Voice Everse 8, Pin 12 Giờ, Công Suất 400W, Chống Nước IP43, Bluetooth, TWS</a>
+                            <br>
+
+
+                        </div>
+
+                        <div class="col-sx-2 col-sm-2 col-md-2  col-lg-2">
+                            <p class="tien" >26.800.000 đ</p>
+
+                        </div>
+
+                        <div class="col-sx-3 col-sm-3 col-md-3  col-lg-3 nut">
+                            <button id="tru2" onclick="tru2()">-</button><input class="soluong" type="text" value="1"><button onclick="cong2()" id="cong2">+</button>
+                            <button><i class="far fa-trash-alt"></i> Xóa</button>
+
+                        </div>
+
+                      
+
+                    </div>
+
+
+
+                    <div class="row moihangchitiet">
+                        <div class="col-sx-2 col-sm-2 col-md-2  col-lg-2">
+                            <img style="width: 100px;" src="../image/giohang/anh3.jpg" alt="">
+
+                        </div>
+
+                        <div class="col-sx-5 col-sm-5 col-md-5  col-lg-5">
+                            <a href="#">Micro JKaudio K800, Cảm Biết Gia Tốc, Cảm Biến Tự Ngắt, Dò Sóng Sạch</a>
+                            <br>
+
+
+                        </div>
+
+                        <div class="col-sx-2 col-sm-2 col-md-2  col-lg-2">
+                            <p class="tien">7.990.000 đ</p>
+
+                        </div>
+
+                        <div class="col-sx-3 col-sm-3 col-md-3  col-lg-3 nut">
+                            <button id="tru3" onclick="tru3()">-</button><input class="soluong" type="text" value="1"> <button id="cong3" onclick="cong3()">+</button>
+                            <button ><i class="far fa-trash-alt"></i> Xóa</button>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+            <!-- Chi tiet san pham-->
+
+            <!-- Tổng tiền thanh toán-->
+            <div class="row tinhtien">
+                <div>
+                    <table>
+                        <tr>
+                            <th>Tổng tiền sản phẩm: </th>
+                            <td id="tongTienSanPham"></td>
+                        </tr>
+
+                        <tr>
+                            <th>Phí vận chuyển: </th>
+                            <td>50.000 đ</td>
+                        </tr>
+
+                        <tr class="trthanhtien">
+                            <th>Tổng tiền: </th>
+                            <td id="othanhtien" style="color: red;" ></td>
+
+                        </tr>
+                    </table>
+
+                </div>
+
+                <br style="clear: both;">
+
+            </div>
+            <!-- Tổng tiền thanh toán-->
+
+            <!-- Thông tin cá nhân-->
+            <div class="row thongtincanhan">
+                <form action="#">
+                    <table>
+                        <tr>
+                            <td> <span>*</span> Họ tên: </td>
+                            <td>
+                                <input class="form-control" type="text" placeholder="Họ tên">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><span>*</span> Số điện thoại: </td>
+                            <td>
+                                <input class="form-control" type="tel" placeholder="Số điện thoại">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td><span>*</span> Tỉnh thành</td>
+                            <td>
+                                <select class="form-control">
+                                    <option selected>Chọn Tỉnh/Thành Phố</option>
+                                    <option>TP.Hồ Chí Minh</option>
+                                    <option>Hà Nội</option>
+                                    <option>Vũng Tàu</option>
+                                    <option>Gia Lai</option>
+                                    <option>Phú Yên</option>
+                                    <option>Bình Định</option>
+                                    <option>Nha Trang</option>
+                                    <option>Bình Dương</option>
+                                    <option>Quảng Ngãi</option>
+                                    <option>Nghệ An</option>
+                                </select>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td><span>*</span> Địa chỉ giao hàng: </td>
+                            <td><input class="form-control" type="text" placeholder="Số nhà, tên đường, phườngxã"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Ghi chú: </td>
+                            <td>
+                                <input class="form-control" type="text" placeholder="Nhắn gởi tới người bán">
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+
+
+
+            </div>
+
+            <!-- Thông tin cá nhân-->
+
+            <!--Nút đặt hàng-->
+            <div class="nutdathang">
+                <button class="btn btn-warning btn-lg">ĐẶT HÀNG ONLINE</button>
+                <button class="btn btn-success btn-lg">Mua Trả Góp Thẻ VISA/Master/JCB</button>
+
+            </div>
+
+            </form>
+            <!-- Nút đặt hàng-->
+
+        </div>
+
+    </div>
+    <!-- end nội dung -->
+
+
+
+    <footer class="py-5 my-3 bg-white">
+        <div class="container ">
+          <div class="row">
+            <div class="col-6 ulfooter">
+              <h5 xss=removed>Tấn Phát Store</h5>
+              <hr>
+    
+              <p>Địa chỉ: 42 Liên khu 4-5, Bình Hưng Hòa B, Bình Tân, Hồ Chí Minh</p>
+              <p>Hotline bán hàng: 0929528914 (Tấn Phát)</p>
+              <p>Hotline kỹ thuật: 0929528914 (Tấn Phát)</p>
+              <p>Email: btphat11321@gmail.com</p>
+              <div class="container">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-google-plus"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </div>
+    
+            </div>
+    
+            <div class="col-3 ulfooter">
+              <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+              <hr>
+    
+              <p><a href="gioithieu.html">Chính sách đổi trả hàng</a></p>
+              <p><a href="gioithieu.html">Chính sách vận chuyển</a></p>
+              <p><a href="gioithieu.html">Chính sách bán hàng online</a></p>
+              <p><a href="gioithieu.html">Chính sách bảo hành</a></p>
+              <p><a href="gioithieu.html">Chính sách trả góp</a></p>
+    
+    
+            </div>
+    
+            <div class="col-3 ulfooter">
+              <h5>VỀ TẤN PHÁT STORE</h5>
+    
+              <hr>
+    
+    
+              <p><a href="gioithieu.html">Giới thiệu</a></p>
+              <p><a href="lienhe.html">Liên hệ</a></p>
+              <p><a href="#">Tuyển dụng</a></p>
+              <p><a href="tintuc.html">Tin tức</a></p>
+              <p><a href="#">Hệ thống cửa hàng</a></p>
+            </div>
+          </div>
+        </div>
+    
+    
+      </footer>
+    
+      <div class="bg-light contaier-fluid " style="font-size: 13px;color: slategray;text-align: center;">
+        ©2024 Tấn Phát Store Copyright, All Rights Reserved.
+        <br>
+        <br>
+      </div>
+
+
+    <script src="../js/Home.js"></script>
+    <script src="../js/GioHang.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/dangnhap.js"></script>
+</body>
+
+</html>

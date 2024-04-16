@@ -1,0 +1,26 @@
+.content {
+    color: #3b5998;
+}
+
+.bnt1 {
+    color: white;
+}
+
+.form {
+    position: fixed; 
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 30px; 
+    background-color: white; 
+    border-radius: 10px;
+    max-width: 600px; 
+}
+
+.label1 {
+    margin-right: 20px;
+}
+
+.tabledk tr td {
+    padding-bottom: 10px;
+}
